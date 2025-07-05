@@ -1,0 +1,142 @@
+
+/* ===== NAVBAR ===== */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    background-color: rgba(13, 13, 13, 0.95) !important;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-text {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #ff6b00, #ffa502);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 8px 15px !important;
+    border-radius: 5px;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* Suavizar el dropdown */
+.navbar .dropdown-menu {
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+  display: block;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+.navbar .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.search-form {
+    position: relative;
+    width: 250px;
+}
+
+.search-form input {
+    padding-right: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+}
+
+.search-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-form input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: none;
+}
+
+.btn-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0 15px;
+}
+
+.btn-search:hover {
+    color: white;
+}
+
+.btn-account {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-account:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.btn-cart {
+    position: relative;
+    color: white;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background: var(--warning);
+    color: var(--dark);
+    font-size: 0.7rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.dropdown-item {
+    padding: 8px 15px;
+    font-weight: 500;
+}
+
+.dropdown-item i {
+    width: 20px;
+    text-align: center;
+    margin-right: 8px;
+}
