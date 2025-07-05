@@ -1,0 +1,46 @@
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f1adad;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      padding: 40px;
+      gap: 40px;
+      background: #f3dddd;
+      max-width: 1000px;
+      margin: auto;
+      border-radius: 8px;
+    }
+    .cart {
+      flex: 2;
+    }
+    .cart h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .item img {
+      width: 80px;
+      height: auto;
+      border-radius: 4px;
+    }
+    .item-info {
+      flex: 1;
+      margin-left: 20px;
+    }
+    .item-info h4, .item-info p {
+      margin: 2px 0;
+    }
+    .item-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
