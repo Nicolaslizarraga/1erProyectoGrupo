@@ -44,3 +44,42 @@
       align-items: center;
       gap: 10px;
     }
+     .summary {
+      flex: 1;
+      padding: 20px;
+      border-left: 1px solid #ccc;
+    }
+    .summary h3 {
+      font-size: 1.3em;
+      margin-bottom: 20px;
+    }
+    .summary p {
+      margin: 8px 0;
+    }
+    select, button {
+      padding: 8px;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .alert {
+      background: #fff3cd;
+      padding: 10px;
+      margin-top: 20px;
+      border: 1px solid #ffeeba;
+      border-radius: 4px;
+    }
+    .disabled-btn {
+      background: #ccc;
+      border: none;
+      cursor: not-allowed;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .secure {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: gray;
+    }
+    .promo {
+      margin-top: 40px;
+    }
