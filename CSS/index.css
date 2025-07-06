@@ -1,4 +1,11 @@
 
+body{
+    background-image: url("/IMAGENES/FEATURES/MATIAS/ChatGPT\ Image\ 2\ jul\ 2025\,\ 07_10_31.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* ===== NAVBAR ===== */
 .navbar {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -140,3 +147,5 @@
     text-align: center;
     margin-right: 8px;
 }
+
+
