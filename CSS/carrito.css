@@ -1,85 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0a001a, #1a002e);
+    font-family: 'Arial', sans-serif;
+    color: #f0c3ff;
+}
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f1adad;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      display: flex;
-      padding: 40px;
-      gap: 40px;
-      background: #f3dddd;
-      max-width: 1000px;
-      margin: auto;
-      border-radius: 8px;
-    }
-    .cart {
-      flex: 2;
-    }
-    .cart h2 {
-      font-size: 1.5em;
-      margin-bottom: 20px;
-    }
-    .item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-    .item img {
-      width: 80px;
-      height: auto;
-      border-radius: 4px;
-    }
-    .item-info {
-      flex: 1;
-      margin-left: 20px;
-    }
-    .item-info h4, .item-info p {
-      margin: 2px 0;
-    }
-    .item-actions {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-     .summary {
-      flex: 1;
-      padding: 20px;
-      border-left: 1px solid #ccc;
-    }
-    .summary h3 {
-      font-size: 1.3em;
-      margin-bottom: 20px;
-    }
-    .summary p {
-      margin: 8px 0;
-    }
-    select, button {
-      padding: 8px;
-      width: 100%;
-      margin-top: 10px;
-    }
-    .alert {
-      background: #fff3cd;
-      padding: 10px;
-      margin-top: 20px;
-      border: 1px solid #ffeeba;
-      border-radius: 4px;
-    }
-    .disabled-btn {
-      background: #ccc;
-      border: none;
-      cursor: not-allowed;
-      padding: 10px;
-      margin-top: 20px;
-    }
-    .secure {
-      margin-top: 10px;
-      font-size: 0.9em;
-      color: gray;
-    }
-    .promo {
-      margin-top: 40px;
-    }
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cart, .summary {
+    background-color: #1a002e;
+    border: 2px solid #a000ff;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #a000ff, 0 0 15px #ff0055 inset;
+    padding: 20px;
+    width: 420px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #ff0077;
+    text-shadow: 0 0 10px #ff0066, 0 0 20px #a000ff;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4d004d;
+    padding: 15px 0;
+}
+
+.item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff0044, #6a00ff);
+    margin-right: 15px;
+    box-shadow: 0 0 10px #ff00aa;
+}
+
+.item-info h4 {
+    margin: 0;
+    color: #ff00c8;
+    text-shadow: 0 0 5px #ff00c8;
+}
+
+.item-info p {
+    margin: 5px 0 0 0;
+    color: #f0c3ff;
+}
+
+.item-actions {
+    margin-left: auto;
+    text-align: right;
+}
+
+.item-actions input {
+    width: 50px;
+    padding: 5px;
+    background-color: #330033;
+    color: #fff;
+    border: 1px solid #ff0077;
+    border-radius: 5px;
+}
+
+.item-actions p {
+    margin: 5px 0;
+    color: #ffb3f7;
+}
+
+.item-actions button {
+    background-color: transparent;
+    border: 1px solid #ff0040;
+    color: #ff0040;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.item-actions button:hover {
+    background-color: #ff0040;
+    color: #fff;
+    box-shadow: 0 0 10px #ff0040;
+}
+
+.summary p {
+    margin: 10px 0;
+    color: #f0c3ff;
+    font-size: 14px;
+}
+
+.summary strong {
+    color: #ff008c;
+    text-shadow: 0 0 5px #ff008c;
+}
+
+.alert {
+    background-color: #400040;
+    color: #ffccff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #ff00ff;
+    text-align: center;
+}
+
+.alert a {
+    color: #ff00ff;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.disabled-btn {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #660033;
+    color: #aaa;
+    border: 2px solid #aa0044;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.secure {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #aa66ff;
+}
