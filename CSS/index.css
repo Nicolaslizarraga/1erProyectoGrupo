@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow-x: hidden;
 }
 
 /* ===== NAVBAR ===== */
@@ -151,22 +152,97 @@ body {
 
 /* ===== Contenedor categorias ===== */
 
-.contenedor-categorias {
-  border: solid 1px black;
-  justify-content: center;
-  align-items: center;
-  background-color: #6c0e23;
+/* Estilos personalizados */
+.category-card {
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
+.category-card:hover {
+  transform: translateY(-5px);
+}
 
+.shadow-hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
 
+.shadow-hover:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    rgba(30, 30, 30, 0.9),
+    rgba(20, 20, 20, 0.9)
+  ) !important;
+}
 
+.rounded-lg {
+  border-radius: 12px !important;
+}
+
+.icon-container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-indicator {
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6b6b, #feca57);
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.category-card:hover .hover-indicator {
+  opacity: 1;
+}
+
+/* Gradientes para los iconos */
+.text-gradient-primary {
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-danger {
+  background: linear-gradient(45deg, #ff0844, #ffb199);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-info {
+  background: linear-gradient(45deg, #209cff, #68e0cf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-warning {
+  background: linear-gradient(45deg, #f6d365, #fda085);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-pink {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* CARDS  */
-
-
-
-
 
 /* ----- CONTENEDOR PRINCIPAL ----- */
 .game-card {
@@ -204,10 +280,11 @@ body {
 .image-container:hover .main-image {
   opacity: 0;
 }
-
+.image-container2:hover .main-image {
+  opacity: 0;
+}
 
 /* ----- VIDEO / GIF EN HOVER ----- */
-
 
 .hover-video {
   position: absolute;
@@ -218,20 +295,51 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 1;
+  background-size: cover;
+  background-position: center;
 }
 
-.row > .col-6:nth-child(1) .hover-video {
+.hover-age {
   background-image: url("/IMAGENES/FEATURES/MATIAS/ageofmytholofy.gif");
-  background-size: cover;
-  background-position: center;
 }
-.row > .col-6:nth-child(2) .hover-video {
+.hover-god {
   background-image: url("/IMAGENES/FEATURES/MATIAS/gif-godofwar.gif");
-  background-size: cover;
-  background-position: center;
+}
+.hover-call {
+  background-image: url("/IMAGENES/FEATURES/MATIAS/call-of-duty-black-ops-4-gif.gif");
+}
+.hover-horizon {
+  background-image: url("/IMAGENES/FEATURES/MATIAS/horizon-zero-gif.gif");
+}
+.hover-infinite {
+  background-image: url("/IMAGENES/FEATURES/MATIAS/bioshok-infinite-gif.gif");
+}
+.hover-witcher3 {
+  background-image: url("/IMAGENES/FEATURES/MATIAS/thewitcher3-gif.gif");
+}
+.hover-fortnite {
+  background-image: url("/IMAGENES/FEATURES/MATIAS/fortnite-gif.gif");
+}
+.hover-gta5 {
+  background-image: url("/IMAGENES/FEATURES/MATIAS/gta5-gif.gif");
+}
+.hover-hell {
+  background-image: url("/IMAGENES/FEATURES/MATIAS/hell-let-lose-gif.gif");
+}
+.hover-csgo {
+  background-image: url("/IMAGENES/FEATURES/MATIAS/csgo-gif.gif");
+}
+.hover-bioshoc {
+  background-image: url("/IMAGENES/FEATURES/MATIAS/bioshoc-gif.gif");
+}
+.hover-bioshoc2 {
+  background-image: url("/IMAGENES/FEATURES/MATIAS/bioshock2.gif");
 }
 
 .image-container:hover .hover-video {
+  opacity: 1;
+}
+.image-container2:hover .hover-video {
   opacity: 1;
 }
 
@@ -285,9 +393,7 @@ body {
   font-weight: bold;
 }
 
-
 /* Carousel */
-
 
 .contenedor-carousel {
   width: 100%;
@@ -298,16 +404,10 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: 30% 20%;  /* Más control aún, en porcentaje */
+  object-position: 30% 20%; /* Más control aún, en porcentaje */
 }
 
-
-
-
 /* carousel2 */
-
-
-
 
 #carousel-promos .carousel-item {
   width: 100%;
@@ -336,14 +436,7 @@ body {
   }
 }
 
-
-
-
-
 /* ===== Footer ===== */
-
-
-
 
 footer {
   /*background-color: #210c24;*/
@@ -431,6 +524,12 @@ footer {
   padding-top: 20px;
 }
 
-
-
-
+@media (max-width: 425px) {
+  .publicidad-coca {
+    display: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
+}

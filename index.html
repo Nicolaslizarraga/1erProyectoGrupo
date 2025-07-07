@@ -23,7 +23,7 @@
 <body>
     <header>
         <!--// navbar-dark bg-dark-->
-        <nav class="navbar navbar-expand-lg  fixed-top mb-5" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top mb-5" data-bs-theme="dark">
             <div class="container">
 
                 <a class="navbar-brand" href="#">
@@ -41,10 +41,10 @@
                             <a class="nav-link active" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#nuevos">Nuevos</a>
+                            <a class="nav-link" href="#nuevos">Nosotros</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#ofertas">Ofertas</a>
+                            <a class="nav-link" href="#ofertas">Contactp</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
@@ -102,48 +102,90 @@
                     </div>
                 </div>
             </div>
+        </nav>
     </header>
     <main>
         <p class="display-3 text-center text-light mt-5 pt-5">Bienvenidos a Los 5 Games <br> preparate para las
             mejores
             ofertas</p>
         <section class="container mt-5 pt-5">
-            <h1 class="display2 text-light">Categorías</h1>
-            <div class="row mt-5 justify-content-center ms-auto me-auto">
-                <div class="col-12 col-md-6 col-lg-2 py-5 contenedor-categorias">
-                    <a href="#Tendencia">
-                        <p class="text-center text-light"><i class="fa-solid fa-arrow-trend-up"></i></p>
-                        <p class="text-center text-light">Tendencia</p>
+            <h1 class="display-4 text-light mb-4 text-center font-weight-bold">Explora por Categorías</h1>
+            <div class="row mt-4 justify-content-center">
+                <!-- Tendencia -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#Tendencia" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-arrow-trend-up fa-2x text-gradient-primary"></i>
+                            </div>
+                            <h5 class="text-light mb-0">Tendencia</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-2 py-5  contenedor-categorias">
-                    <a href="#Accion">
-                        <p class="text-center text-light"><i class="fa-solid fa-gun"></i></p>
-                        <p class="text-center text-light">Accion</p>
+
+                <!-- Acción -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#Accion" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-gun fa-2x text-gradient-danger"></i>
+                            </div>
+                            <h5 class="text-light mb-0">Acción</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-2 py-5  contenedor-categorias">
-                    <a href="">
-                        <p class="text-center text-light"><i class="fa-solid fa-plane-departure"></i></p>
-                        <p class="text-center text-light">Simulacion</p>
+
+                <!-- Simulación -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-plane-departure fa-2x text-gradient-info"></i>
+                            </div>
+                            <h5 class="text-light mb-0">Simulación</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-2 py-5  contenedor-categorias">
-                    <a href="">
-                        <p class="text-center text-light"><i class="fa-solid fa-chess-knight"></i></p>
-                        <p class="text-center text-light">Estrategia</p>
+
+                <!-- Estrategia -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-chess-knight fa-2x text-gradient-warning"></i>
+                            </div>
+                            <h5 class="text-light mb-0">Estrategia</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-2 py-5  contenedor-categorias">
-                    <a href="#Mejor-calificado">
-                        <p class="text-center text-light"><i class="fa-solid fa-face-kiss-wink-heart"></i></p>
-                        <p class="text-center text-light">Lo mejor calificado</p>
+
+                <!-- Mejor calificado -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#Mejor-calificado" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-face-kiss-wink-heart fa-2x text-gradient-pink"></i>
+                            </div>
+                            <h5 class="text-light mb-0">Top Valorados</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-2 py-5  contenedor-categorias">
-                    <a href="">
-                        <p class="text-center text-light"><i class="fa-solid fa-chess-knight"></i></p>
-                        <p class="text-center text-light">Estrategia</p>
+
+                <!-- RPG (reemplazo del duplicado de Estrategia) -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-dragon fa-2x text-gradient-purple"></i>
+                            </div>
+                            <h5 class="text-light mb-0">RPG</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -192,7 +234,7 @@
                             <div class="image-container">
                                 <img src="./IMAGENES/FEATURES/MATIAS/AgeOfMytology.jpg" alt="Age of Mythology"
                                     class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-age"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Age of Mythology</h5>
@@ -218,7 +260,7 @@
                         <div class="game-card">
                             <div class="image-container">
                                 <img src="./IMAGENES/FEATURES/MATIAS/Godofwar.jpg" alt="God of War" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-god"></div>
                             </div>
                             <div class="game-info">
                                 <h5>God of War</h5>
@@ -245,7 +287,7 @@
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/call-of-duty-modern-warfare-2-task-force-i149551.jpg"
                                     alt="Call of Duty" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-call "></div>
                             </div>
                             <div class="game-info">
                                 <h5>Call of Duty</h5>
@@ -271,7 +313,7 @@
                         <div class="game-card">
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/Horizon.png" alt="Horizon" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-horizon"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Horizon</h5>
@@ -302,7 +344,7 @@
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/bioshocinfinite.jpg" alt="Age of Mythology"
                                     class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-infinite"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Age of Mythology</h5>
@@ -329,7 +371,7 @@
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/TheWitcher3-2.jpg" alt="God of War"
                                     class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-witcher3"></div>
                             </div>
                             <div class="game-info">
                                 <h5>God of War</h5>
@@ -355,7 +397,7 @@
                         <div class="game-card">
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/fornite5.jpg" alt="Call of Duty" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-fortnite"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Call of Duty</h5>
@@ -381,7 +423,7 @@
                         <div class="game-card">
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/gta5-2.jpg" alt="Horizon" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-gta5"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Horizon</h5>
@@ -411,7 +453,7 @@
                             <div class="image-container2">
                                 <img src="/IMAGENES/FEATURES/MATIAS/hellloose.77caf06c-66b6-4ed8-ab29-73b2901b20d1"
                                     alt="Age of Mythology" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-hell"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Age of Mythology</h5>
@@ -437,7 +479,7 @@
                         <div class="game-card">
                             <div class="image-container2">
                                 <img src="/IMAGENES/FEATURES/MATIAS/csgo.avif" alt="God of War" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-csgo"></div>
                             </div>
                             <div class="game-info">
                                 <h5>God of War</h5>
@@ -463,7 +505,7 @@
                         <div class="game-card">
                             <div class="image-container2">
                                 <img src="/IMAGENES/FEATURES/MATIAS/bioshoc.jpg" alt="Call of Duty" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-bioshoc"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Call of Duty</h5>
@@ -489,7 +531,7 @@
                         <div class="game-card">
                             <div class="image-container2">
                                 <img src="/IMAGENES/FEATURES/MATIAS/bioshoc2.jpg" alt="Horizon" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-bioshoc2"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Horizon</h5>
@@ -558,7 +600,7 @@
                             <div class="image-container">
                                 <img src="./IMAGENES/FEATURES/MATIAS/AgeOfMytology.jpg" alt="Age of Mythology"
                                     class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-age"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Age of Mythology</h5>
@@ -584,7 +626,7 @@
                         <div class="game-card">
                             <div class="image-container">
                                 <img src="./IMAGENES/FEATURES/MATIAS/Godofwar.jpg" alt="God of War" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-god"></div>
                             </div>
                             <div class="game-info">
                                 <h5>God of War</h5>
@@ -611,7 +653,7 @@
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/call-of-duty-modern-warfare-2-task-force-i149551.jpg"
                                     alt="Call of Duty" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-call"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Call of Duty</h5>
@@ -637,7 +679,7 @@
                         <div class="game-card">
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/Horizon.png" alt="Horizon" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-horizon"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Horizon</h5>
@@ -658,7 +700,11 @@
                 </div>
 
             </div>
-
+            <div class="row justify-content-center mt-5 publicidad-coca">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="/IMAGENES/FEATURES/MATIAS/coca-publicidad-2.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
             <div class="row justify-content-center g-3 px-2 mt-5">
 
                 <!-- Juego 1: Age of Mythology -->
@@ -668,7 +714,7 @@
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/bioshocinfinite.jpg" alt="Age of Mythology"
                                     class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-infinite"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Age of Mythology</h5>
@@ -695,7 +741,7 @@
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/TheWitcher3-2.jpg" alt="God of War"
                                     class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-witcher3"></div>
                             </div>
                             <div class="game-info">
                                 <h5>God of War</h5>
@@ -721,7 +767,7 @@
                         <div class="game-card">
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/fornite5.jpg" alt="Call of Duty" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-fortnite"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Call of Duty</h5>
@@ -747,7 +793,7 @@
                         <div class="game-card">
                             <div class="image-container">
                                 <img src="/IMAGENES/FEATURES/MATIAS/gta5-2.jpg" alt="Horizon" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-gta5"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Horizon</h5>
@@ -768,7 +814,12 @@
                 </div>
 
             </div>
-            <div class="row justify-content-center g-3 px-2 mt-5">
+            <div class="row justify-content-center mt-5 mb-5">
+                <div class="col-12 col-sm-4 col-md-3 col-lg-7 ">
+                    <img src="/IMAGENES/FEATURES/MATIAS/spotify-publicidad.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row justify-content-center ms-auto me-auto">
 
                 <!-- Juego 1: Age of Mythology -->
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2">
@@ -777,7 +828,7 @@
                             <div class="image-container2">
                                 <img src="/IMAGENES/FEATURES/MATIAS/hellloose.77caf06c-66b6-4ed8-ab29-73b2901b20d1"
                                     alt="Age of Mythology" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-hell"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Age of Mythology</h5>
@@ -803,7 +854,7 @@
                         <div class="game-card">
                             <div class="image-container2">
                                 <img src="/IMAGENES/FEATURES/MATIAS/csgo.avif" alt="God of War" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-csgo"></div>
                             </div>
                             <div class="game-info">
                                 <h5>God of War</h5>
@@ -829,7 +880,7 @@
                         <div class="game-card">
                             <div class="image-container2">
                                 <img src="/IMAGENES/FEATURES/MATIAS/bioshoc.jpg" alt="Call of Duty" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-bioshoc"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Call of Duty</h5>
@@ -855,7 +906,7 @@
                         <div class="game-card">
                             <div class="image-container2">
                                 <img src="/IMAGENES/FEATURES/MATIAS/bioshoc2.jpg" alt="Horizon" class="main-image">
-                                <div class="hover-video"></div>
+                                <div class="hover-video hover-bioshoc2"></div>
                             </div>
                             <div class="game-info">
                                 <h5>Horizon</h5>
@@ -887,7 +938,7 @@
             <div class="col-12 col-md-6 contenedor-imagen-publicidad d-none d-md-block">
                 <img src="/images/diseno-plantilla-noche-juego.avif" alt="Publicidad 2">
             </div>
-
+        </section>
 
 
 
@@ -897,7 +948,7 @@
     </main>
 
 
-    <footer>
+    <footer class=" navbar-dark bg-dark ">
         <div class="footer-container">
 
             <!-- Columna 1: Logo -->
