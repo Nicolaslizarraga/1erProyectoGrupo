@@ -1,13 +1,14 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(39, 78, 111);
+.body{
+    background-color: #533483;
+    
+  
 }
-.h1{
+.display-6{
     color: white;
     border: 5px;
 }
@@ -16,7 +17,4 @@ body{
 }
 .imagen1{
     padding-right: 23px;
-}
-.resultadoreseñarecientes{
-    text-decoration: none;
 }
