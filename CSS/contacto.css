@@ -1,0 +1,10 @@
+.mapa-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.mapa-container h2{
+    text-align: center;
+
+}
