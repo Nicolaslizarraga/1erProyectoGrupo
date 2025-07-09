@@ -1,3 +1,4 @@
+
 body {
   background-image: url("/IMAGENES/FEATURES/MATIAS/ChatGPT\ Image\ 2\ jul\ 2025\,\ 07_10_31.png");
   background-repeat: no-repeat;
@@ -6,6 +7,9 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /* ===== NAVBAR ===== */
@@ -16,6 +20,7 @@ body {
   background-color: #c42021;
   color: white;
   backdrop-filter: blur(10px);
+  
 }
 
 .navbar-brand {
@@ -161,12 +166,37 @@ body {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+#mi-modal-registro {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
+  background: rgba(255, 255, 255, 0.1); /* Transparente blanco */
+  backdrop-filter: blur(10px); /* Efecto vidrio */
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 /* Imagen derecha */
 .contenedor-imagen-form {
   background-image: url("/IMAGENES/FEATURES/MATIAS/leagueoflegends.jpg");
   background-size: cover;
   background-position: center;
+  min-height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  min-height: 200px;
+}
+.contenedor-imagen-form-registro{
+  background-image: url("/IMAGENES/FEATURES/MATIAS/metro-exodus-gif.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 55% 10%;
   min-height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -184,7 +214,9 @@ body {
 .modal-header {
   border-bottom: none !important;
 }
-
+.modal-title{
+  font-size: 4rem;
+}
 .modal-content {
   background-color: transparent !important;
 }
