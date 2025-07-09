@@ -1,58 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Carrito</title>
-   <link rel="stylesheet" href="../CSS/carrito.css">
+    <link rel="stylesheet" href="../CSS/carrito.css">
 
 
 </head>
 
 <body>
+    <header>
+        <!--// navbar-dark bg-dark-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top mb-5" data-bs-theme="dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="./IMAGENES/FEATURES/MATIAS/Steam_Logo.png" alt="" height="40">
+                    <span>L5 Games</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nuevos">Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#ofertas">Contactp</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#accion">Accion</a></li>
+                                <li><a class="dropdown-item" href="#aventura">Aventura</a></li>
+                                <li><a class="dropdown-item" href="#deportes">Deportes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#todas">Ver todas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <form class="d-flex me-3 search-form">
+                            <input class="form-control" type="search" placeholder="Buscar juegos...">
+                            <button class="btn btn-search" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+
+                        <div class="dropdown">
+                            <a class="btn btn-account dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-person-circle me-1"></i> Mi cuenta
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Perfil</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#mi-modal">Inicio de sesion</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Registrarse</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Lista de
+                                        deseos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Carrito</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cerrar
+                                        sesiÃ³n</a></li>
+                            </ul>
+                        </div>
+
+
+                        <a href="#" class="btn btn-cart ms-3">
+                            <i class="fa-solid fa-cart-shopping text-warning"></i>
+                            <span class="cart-badge text-warning">3</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div class="cart-container">
         <h2>Mi carrito</h2>
 
+        <!-- Item 1 -->
         <div class="item">
-            <img src="../IMAGENES/FEATURES/ROMINA/outlast.webp" alt="Juego  de terror Outlast">
-            <div class="item-info">
-                <h4>Outlast Clave GLOBAL (Terror)</h4>
-                <p>$14.487,00</p>
-            </div>
-            <div class="item-precios">
-                <input type="number" value="1" min="1">
-                <p>$14.487,00</p>
-                <button>&#128465;</button>
+            <img src="../IMAGENES/FEATURES/ROMINA/outlast.webp" alt="Juego de terror Outlast">
+            <div class="item-content">
+                <div class="item-info">
+                    <h4>Outlast Clave GLOBAL (Terror)</h4>
+                    <p>$14.487,00</p>
+                </div>
+                <div class="item-precios">
+                    <input type="number" value="1" min="1">
+                    <p>$14.487,00</p>
+                    <button aria-label="Eliminar">&#128465;</button>
+                </div>
             </div>
         </div>
 
-
+        <!-- Item 2 -->
         <div class="item">
-            <img src="../IMAGENES/FEATURES/ROMINA/dune.webp" alt="Juego de accion Dune Spice Wars">
-            <div class="item-info">
-                <h4>Dune: Spice Wars clave LATAM (Accion)</h4>
-                <p><s>$20.840,00</s> $15.420,00</p>
-            </div>
-            <div class="item-precios">
-                <input type="number" value="2" min="1">
-                <p>$30.840,00</p>
-                <button>&#128465;</button>
+            <img src="../IMAGENES/FEATURES/ROMINA/dune.webp" alt="Juego de acción Dune Spice Wars">
+            <div class="item-content">
+                <div class="item-info">
+                    <h4>Dune: Spice Wars clave LATAM (Acción)</h4>
+                    <p><s>$20.840,00</s> $15.420,00</p>
+                </div>
+                <div class="item-precios">
+                    <input type="number" value="2" min="1">
+                    <p>$30.840,00</p>
+                    <button aria-label="Eliminar">&#128465;</button>
+                </div>
             </div>
         </div>
 
+        <!-- Item 3 -->
         <div class="item">
             <img src="../IMAGENES/FEATURES/ROMINA/dead by.webp" alt="Juego de terror Dead by Daylight">
-            <div class="item-info">
-                <h4>Dead by Daylight clave LATAM (Terror)</h4>
-                <p><s>$10.910,00</s> $8.700,00</p>
-            </div>
-            <div class="item-precios">
-                <input type="number" value="1" min="1">
-                <p>$8.700,00</p>
-                <button>&#128465;</button>
+            <div class="item-content">
+                <div class="item-info">
+                    <h4>Dead by Daylight clave LATAM (Terror)</h4>
+                    <p><s>$10.910,00</s> $8.700,00</p>
+                </div>
+                <div class="item-precios">
+                    <input type="number" value="1" min="1">
+                    <p>$8.700,00</p>
+                    <button aria-label="Eliminar">&#128465;</button>
+                </div>
             </div>
         </div>
 
+        <!-- Resumen -->
         <div class="summary">
             <h3>Resumen del Pedido</h3>
             <p>Subtotal: <strong>$67.077,00</strong></p>
@@ -63,22 +161,21 @@
                 Verifica tu compra antes de enviar el pedido
                 <br><a href="#">Seguir navegando</a>
             </div>
-
             <button class="btn-finalizar">Finalizar compra</button>
-
         </div>
     </div>
+
 
     <footer class=" navbar-dark bg-dark ">
         <div class="footer-container">
 
-           
+
             <div class="footer-column footer-logo">
-                <img src="" alt="Logo del sitio">
+                <img src="../IMAGENES/LOGOS/Logo_completo_png.webp" alt="Logo del sitio">
             </div>
 
-           
-            <div class="footer-column">
+
+            <div class="footer-column footer-info">
                 <h4>Redes Sociales</h4>
                 <div class="footer-socials">
                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -89,7 +186,7 @@
                 </div>
             </div>
 
-            
+
             <div class="footer-column footer-info">
                 <h4>Información</h4>
                 <ul>
@@ -106,5 +203,9 @@
             © 2025 5BITS. Todos los derechos reservados.
         </div>
     </footer>
-</body> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
