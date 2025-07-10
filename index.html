@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a simple HTML document with a title and a heading.">
+    <meta name="description" content="Tienda de videojuegos-proyectoRolling">
     <meta name="author" content="Nicolas, Matias, Juan, Romina, Giovanna">
-    <meta name="keywords" content="HTML, CSS, BOOTSTRAP, document">
+    <meta name="keywords" content="HTML, CSS, BOOTSTRAP, juegos, videojuegos, RPG, accion , tienda, tienda de juegos">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/b75d53b146.js" crossorigin="anonymous"></script>
     <title>L5B</title>
-
 </head>
 
 <body>
@@ -46,10 +45,10 @@
                             <a class="nav-link active" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#nuevos">Nosotros</a>
+                            <a class="nav-link" href="/PAGES/nosotros.html">Nosotros</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#ofertas">Contacto</a>
+                            <a class="nav-link" href="/PAGES/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
@@ -63,7 +62,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#todas">Ver todas</a></li>
+                                <li><a class="dropdown-item" href="#todos">Ver todas</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -80,7 +79,7 @@
                                 <i class="bi bi-person-circle me-1"></i> Mi cuenta
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#">Perfil</a>
+                                <li><a class="dropdown-item" href="/PAGES/404.html">Perfil</a>
                                 </li>
                                 <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                         data-bs-target="#mi-modal">Inicio de sesion</a>
@@ -88,15 +87,15 @@
                                 <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                         data-bs-target="#mi-modal-registro">Registrarse</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Lista de
+                                <li><a class="dropdown-item" href="/PAGES/404.html">Lista de
                                         deseos</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Carrito</a>
+                                <li><a class="dropdown-item" href="/PAGES/carrito.html">Carrito</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Cerrar
+                                <li><a class="dropdown-item" href="/PAGES/404.html">Cerrar
                                         sesión</a></li>
                             </ul>
                         </div>
@@ -298,11 +297,13 @@
             </div>
         </div>
     </div>
-     
+
     <main>
-        <p class="display-3 text-center text-light mt-5 pt-5">Bienvenidos a Los 5 Games <br> preparate para las
+        <p class="display-3 text-center text-light mt-5 pt-5">Bienvenidos a Los <span class="color-nombre">5 Bits</span>
+            <br> preparate para las
             mejores
-            ofertas</p>
+            ofertas
+        </p>
         <section class="container mt-5 pt-5">
             <h1 class="display-4 text-light mb-4 text-center font-weight-bold">Explora por Categorías</h1>
             <div class="row mt-4 justify-content-center">
@@ -419,7 +420,7 @@
 
 
 
-
+        <h1 class="display-1 text-center align-items-center text-warning" id="todos">Todos los juegos</h1>
         <section class="container-fluid px-0">
             <div class="row justify-content-center g-3 px-2">
 
@@ -618,7 +619,8 @@
                     <a href="./PAGES/404.html">
                         <div class="game-card">
                             <div class="image-container">
-                                <img src="/IMAGENES/FEATURES/MATIAS/gta5-2.jpg" alt="grand theft auto v" class="main-image">
+                                <img src="/IMAGENES/FEATURES/MATIAS/gta5-2.jpg" alt="grand theft auto v"
+                                    class="main-image">
                                 <div class="hover-video hover-gta5"></div>
                             </div>
                             <div class="game-info">
@@ -674,7 +676,8 @@
                     <a href="./PAGES/404.html">
                         <div class="game-card">
                             <div class="image-container2">
-                                <img src="/IMAGENES/FEATURES/MATIAS/csgo.avif" alt="counter strike 2" class="main-image">
+                                <img src="/IMAGENES/FEATURES/MATIAS/csgo.avif" alt="counter strike 2"
+                                    class="main-image">
                                 <div class="hover-video hover-csgo"></div>
                             </div>
                             <div class="game-info">
@@ -1123,27 +1126,8 @@
                 </div>
 
             </div>
-
-
-
-            <section class="container-fluid mt-5 mb-5 me-5">
-                <div class="contenedor-imagen-promocional mx-0 px-0">
-                    <img src="/IMAGENES/FEATURES/MATIAS/image.png" alt="" class="img-fluid w-100">
-                </div>
-            </section>
-            <div class="col-12 col-md-6 contenedor-imagen-publicidad d-none d-md-block">
-                <img src="/images/diseno-plantilla-noche-juego.avif" alt="Publicidad 2">
-            </div>
         </section>
-
-
-
-
-
-
     </main>
-
-
     <footer class=" navbar-dark bg-dark ">
         <div class="footer-container">
 
@@ -1156,11 +1140,11 @@
             <div class="footer-column">
                 <h4>Redes Sociales</h4>
                 <div class="footer-socials">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="text-warning" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-warning" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="text-warning" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-warning" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-warning" aria-label="Discord"><i class="fab fa-discord"></i></a>
                 </div>
             </div>
 
@@ -1168,10 +1152,10 @@
             <div class="footer-column footer-info">
                 <h4>Información</h4>
                 <ul>
-                    <li><a href="#">Política de privacidad</a></li>
-                    <li><a href="#">Términos de uso</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#" class="text-warning">Política de privacidad</a></li>
+                    <li><a href="#" class="text-warning">Términos de uso</a></li>
+                    <li><a href="#" class="text-warning">Contacto</a></li>
+                    <li><a href="#" class="text-warning">Soporte</a></li>
                 </ul>
             </div>
 

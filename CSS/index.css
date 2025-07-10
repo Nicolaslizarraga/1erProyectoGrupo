@@ -157,7 +157,9 @@ body {
   margin-right: 8px;
 }
 
-
+.color-nombre{
+  color: red;
+}
 
 /* ===== MODAL ===== */
 
@@ -415,6 +417,8 @@ button[type="submit"] {
   -webkit-text-fill-color: transparent;
 }
 
+
+
 /* CARDS  */
 
 
@@ -662,13 +666,14 @@ footer {
 }
 
 .footer-socials a {
-  font-size: 20px;
+  font-size: 1.6rem;
   color: #c6d4df;
   transition: color 0.3s ease;
 }
 
 .footer-socials a:hover {
   color: #66c0f4;
+  transform: scale(1.8);
 }
 
 .footer-info h4 {
@@ -680,6 +685,7 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 1.5rem;
 }
 
 .footer-info ul li {
