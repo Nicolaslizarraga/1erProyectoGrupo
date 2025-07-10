@@ -1,4 +1,8 @@
-
+*{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   background-image: url("/IMAGENES/FEATURES/MATIAS/ChatGPT\ Image\ 2\ jul\ 2025\,\ 07_10_31.png");
   background-repeat: no-repeat;
@@ -7,9 +11,6 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
 /* ===== NAVBAR ===== */
@@ -20,7 +21,6 @@ body {
   background-color: #c42021;
   color: white;
   backdrop-filter: blur(10px);
-  
 }
 
 .navbar-brand {
@@ -157,7 +157,11 @@ body {
   margin-right: 8px;
 }
 
+
+
 /* ===== MODAL ===== */
+
+
 #mi-modal {
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
   background: rgba(255, 255, 255, 0.1); /* Transparente blanco */
@@ -166,9 +170,7 @@ body {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+
 }
 #mi-modal-registro {
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
@@ -178,9 +180,7 @@ body {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+ 
 }
 /* Imagen derecha */
 .contenedor-imagen-form {
@@ -192,7 +192,7 @@ body {
   border-bottom-right-radius: 15px;
   min-height: 200px;
 }
-.contenedor-imagen-form-registro{
+.contenedor-imagen-form-registro {
   background-image: url("/IMAGENES/FEATURES/MATIAS/metro-exodus-gif.gif");
   background-size: cover;
   background-repeat: no-repeat;
@@ -207,14 +207,14 @@ body {
 .form-text {
   font-size: 0.75rem;
 }
-.iconos-login{
+.iconos-login {
   font-size: 1.5rem;
   color: white;
 }
 .modal-header {
   border-bottom: none !important;
 }
-.modal-title{
+.modal-title {
   font-size: 4rem;
 }
 .modal-content {
@@ -224,7 +224,7 @@ body {
 button[type="submit"] {
   width: 100%;
 }
-.enlace-olvidar-contraseña{
+.enlace-olvidar-contraseña {
   color: white;
   text-decoration: none;
 }
@@ -261,39 +261,80 @@ button[type="submit"] {
   left: 100%;
 }
 .btn-close {
-    filter: invert(1) brightness(100%); /* Convierte el ícono a blanco */
-    opacity: 1; /* Asegura que no esté semitransparente */
+  filter: invert(1) brightness(100%); /* Convierte el ícono a blanco */
+  opacity: 1; /* Asegura que no esté semitransparente */
 }
 
 .btn-close:hover {
-    opacity: 0.8; /* Efecto hover suave */
+  opacity: 0.8; /* Efecto hover suave */
 }
 @media (max-width: 768px) {
-   .contenedor-iconos-login{
-     text-align: center;
-     justify-content: center;
-     gap: 40px;
+  .contenedor-iconos-login {
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
   }
 }
 @media (max-width: 425px) {
-   .contenedor-iconos-login{
-     text-align: center;
-     justify-content: center;
+  .contenedor-iconos-login {
+    text-align: center;
+    justify-content: center;
   }
 }
-/* ===== MODAL ===== */
+
+
+/* ===== FIN  MODAL ===== */
 
 
 /* ===== Contenedor categorias ===== */
+.tendencia{
+  background-image: url("/IMAGENES/FEATURES/MATIAS/TENDENCIA.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.accion{
+  background-image: url("/IMAGENES/FEATURES/MATIAS/accion.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.simulacion{
+  background-image: url("/IMAGENES/FEATURES/MATIAS/simulacion.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-/* Estilos personalizados */
+.estrategia{
+  background-image: url("/IMAGENES/FEATURES/MATIAS/estrategia.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top-valorados{
+  background-image: url("/IMAGENES/FEATURES/MATIAS/top-valorados.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.RPG{
+  background-image: url("/IMAGENES/FEATURES/MATIAS/RPG.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 .category-card {
   text-decoration: none;
   transition: transform 0.3s ease;
 }
 
 .category-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* hay que acordarnos de ajustarlo o sacarlo */
 }
 
 .shadow-hover {
@@ -303,10 +344,7 @@ button[type="submit"] {
 
 .shadow-hover:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(
-    rgba(30, 30, 30, 0.9),
-    rgba(20, 20, 20, 0.9)
-  ) !important;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .rounded-lg {
@@ -327,13 +365,14 @@ button[type="submit"] {
   margin: 0 auto;
   opacity: 0;
   transition: opacity 0.3s ease;
+
 }
 
 .category-card:hover .hover-indicator {
   opacity: 1;
+  
 }
 
-/* Gradientes para los iconos */
 .text-gradient-primary {
   background: linear-gradient(45deg, #4facfe, #00f2fe);
   background-clip: text;
@@ -342,28 +381,28 @@ button[type="submit"] {
 }
 
 .text-gradient-danger {
-  background: linear-gradient(45deg, #ff0844, #ffb199);
+  background: linear-gradient(45deg, #065f06, #ffb199);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-info {
-  background: linear-gradient(45deg, #209cff, #68e0cf);
+  background: linear-gradient(45deg, #3b3a36, #68e0cf);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-warning {
-  background: linear-gradient(45deg, #f6d365, #fda085);
+  background: linear-gradient(45deg, #161511, #b6553b);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-pink {
-  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  background: linear-gradient(45deg, #910a0e, #fad0c4);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -378,7 +417,12 @@ button[type="submit"] {
 
 /* CARDS  */
 
+
+
 /* ----- CONTENEDOR PRINCIPAL ----- */
+
+
+
 .game-card {
   position: relative;
   overflow: hidden;
@@ -484,6 +528,7 @@ button[type="submit"] {
   color: white;
   font-size: 14px;
   display: none;
+  text-decoration: none;
 }
 .game-card:hover .game-info {
   display: block;
@@ -526,6 +571,7 @@ button[type="submit"] {
   color: #fff;
   font-weight: bold;
 }
+
 
 /* Carousel */
 
