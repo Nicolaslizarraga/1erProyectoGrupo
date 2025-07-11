@@ -10,92 +10,210 @@
     <link rel="stylesheet" href="/CSS/producto.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b75d53b146.js" crossorigin="anonymous"></script>
+
     <title>Productos</title>
 </head>
 
-<body class="body">
+<body>
     <header>
-        <nav class="navbar navbar-expand-lg bg- dark --bs-dark-">
-            <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">Todos los juegos</a>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+        <!--// navbar-dark bg-dark-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top mb-5" data-bs-theme="dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="./IMAGENES/FEATURES/MATIAS/Steam_Logo.png" alt="" height="40">
+                    <span>L5 Games</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Acción</a>
+                            <a class="nav-link active" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" href="#">Ready or Not</a>
+                            <a class="nav-link" href="#nuevos">Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#ofertas">Contactp</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#accion">Accion</a></li>
+                                <li><a class="dropdown-item" href="#aventura">Aventura</a></li>
+                                <li><a class="dropdown-item" href="#deportes">Deportes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#todas">Ver todas</a></li>
+                            </ul>
                         </li>
                     </ul>
+                    <div class="d-flex align-items-center">
+                        <form class="d-flex me-3 search-form">
+                            <input class="form-control" type="search" placeholder="Buscar juegos...">
+                            <button class="btn btn-search" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+
+                        <div class="dropdown">
+                            <a class="btn btn-account dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-person-circle me-1"></i> Mi cuenta
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Perfil</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#mi-modal">Inicio de sesion</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Registrarse</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Lista de
+                                        deseos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Carrito</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cerrar
+                                        sesion</a></li>
+                            </ul>
+                        </div>
+
+
+                        <a href="#" class="btn btn-cart ms-3">
+                            <i class="fa-solid fa-cart-shopping text-warning"></i>
+                            <span class="cart-badge text-warning">3</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="conteiner">
-            <h1 class="display-6">Ready or Not</h1>
+        <section class="container-fluid mb-5">
+            <h1 class="display-6 text-white">God of War Ragnarok</h1>
             <div class="row">
-                <div class="col-12 col-md-7 border">
+                <div class="col-12 col-md-8 mb-3">
                     <video class="video" controls autoplay muted>
                         <source
                             src="https://video.akamai.steamstatic.com/store_trailers/257054534/movie480_vp9.webm?t=1726759092">
                     </video>
-                    <div class="row border">
-                        <div class="col-12 col-md-2 contenedor-imagenes">
-                            <img class="contenedor-imagenes"
-                                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_7c59382e67eadf779e0e15c3837ee91158237f11.116x65.jpg?t=1750909504">
-                        </div>
-                        <div class="col-12 col-md-2 contenedor-imagenes">
-                            <img class="contenedor-imagenes"
-                                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_05f27139b15c5410d07cd59b7b52adbdf73e13da.116x65.jpg?t=1750909504">
-                        </div>
-                        <div class="col-12 col-md-2 contenedor-imagenes">
-                            <img class="contenedor-imagenes"
-                                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_974a7b998c0c14da7fe52a342cf36c98850a57ac.116x65.jpg?t=1750909504">
-                        </div>
-                        <div class="col-12 col-md-2 contenedor-imagenes">
-                            <img class="contenedor-imagenes"
-                                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_78350297511e81f287b4bc361935efbc3016f6db.116x65.jpg?t=1750909504">
-                        </div>
-                        <div class="col-12 col-md-2 contenedor-imagenes">
-                            <img class="contenedor-imagenes"
-                                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_78350297511e81f287b4bc361935efbc3016f6db.116x65.jpg?t=1750909504">
-                        </div>
-                        <div class="col-12 col-md-2 contenedor-imagenes">
-                            <img class="contenedor-imagenes"
-                                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_78350297511e81f287b4bc361935efbc3016f6db.116x65.jpg?t=1750909504">
-                        </div>
-                    </div>
                 </div>
-                <div class="col-12 col-md-4 border">
-                    <img
-                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/header.jpg?t=1750909504">
-                    <div class="container text-white">
-                        <div class="row">
-                            <div class="col-4">RESEÑAS RECIENTES:</div>
-                            <div class="col-4">Mayormente negativas:</div>
-                            <div class="col-4">(13.656)</div>
-                            <div class="col-4">RESEÑAS GENERALES:</div>
-                            <div class="col-4">Muy positivas</div>
-                            <div class="col-4">(198,301)</div>
-                            <div class="col-4">FECHA DE LANZAMIENTO:</div>
-                            <div class="col-8">13 DIC 2023</div>
-                            <div class="col-4">DESARROLLADOR:</div>
-                            <div class="col-8">VOID Interactive</div>
-                            <div class="col-4">EDITOR:</div>
-                            <div class="col-8">VOID Interactive</div>
-                            <div class="col-12">Etiquetas para este producto:</div>
-                            <div class="col-2">Tácticos</div>
-                            <div class="col-2">Realistas</div>
-                            <div class="col-6">Disparos en primera persona</div>
-                            <div class="col-2">+</div>
-                        </div>
-                    </div>
+                <div class="col-12 col-md-4  contenedor-padre">
+                    <img class="img-fluid w-100 mb-3"
+                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_0ac7ad0a72243bc405131af24328faeeeffb1b73.600x338.jpg?t=1750909504">
+                    <img class="img-fluid w-100 mb-3"
+                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_1848b58003fcc199092227f871770a216d9430f9.1920x1080.jpg?t=1750909504">
+                    <img class="img-fluid w-100 mb-3"
+                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_ada650347f78592237dd3ca48ac7834ac9e22747.1920x1080.jpg?t=1750909504"">
+
                 </div>
             </div>
         </section>
+        <section class=" container-fluid">
+                    <div class="row">
+                        <div class="col 12 col-md-7 border">
+                            <p class="text-white">LA SAGA NÓRDICA CONTINÚA</p>
+
+                            <p class="text-white"> Desarrollado por Santa Monica Studio y adaptado para PC en
+                                colaboración con
+                                Jetpack Interactive,
+                                llega God of War Ragnarök, un épico y emotivo viaje en el que Kratos y Atreus deberán
+                                decidir a
+                                qué se aferran y qué dejan ir. </p>
+
+                            <p class="text-white"> En God of War Ragnarök, la secuela del aclamado God of War (2018), el
+                                Fimbulvetr está en marcha.
+                                Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas
+                                mientras las
+                                fuerzas asgardianas de Odín se preparan para la batalla profetizada que supondrá el fin
+                                del
+                                mundo.</p>
+
+                            <p class="text-white">Por el camino, explorarán paisajes míticos increíbles y se enfrentarán
+                                a
+                                temibles enemigos, como
+                                monstruos y dioses nórdicos. A medida que se avecina la amenaza del Ragnarök, Kratos y
+                                Atreus
+                                tendrán que elegir entre la seguridad de su familia y la de los reinos. </p>
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-5 text-white">
+                            <div class="row">
+                                <div class="col-6 col-md-7 col-lg-4">RESEÑAS RECIENTES:</div>
+                                <div class="col-6 col-md-5 col-lg-8">Muy Positivas</div>
+                                <div class="col 5 col-md-7 col-lg-4">RESEÑAS GENERALES:</div>
+                                <div class="col-6 col-md-5 col-lg-8">Muy Positivas</div>
+                                <div class="col-6 col-md-12 col-lg-4">FECHA DE LANZAMIENTO:</div>
+                                <div class="col-6 col-md-12 col-lg-8">19 SEP 2024</div>
+                                <div class="col-4 col-md-12 col-lg-4">DESARROLLADOR:</div>
+                                <div class="col-8 col-md-12 col-lg-8">Santa Monica Studio, Jetpack Interactive </div>
+                                <div class="col-4 col-md-12 col-lg-4">EDITOR:</div>
+                                <div class="col-8 col-md-12 col-lg-8">PlayStation Publishing LLC</div>
+                                <div class="col-12 col-md-12 col-lg-12">Etiquetas populares para este producto:</div>
+                                <div class="col-3 col-md-6 col-lg-4">Acción</div>
+                                <div class="col-3 col-md-6 col-lg-4">Aventura<a href="#"></a></div>
+                                <div class="col-6 col-md-6 col lg-3">Accion y Aventura</div>
+                                <div class="col-4 col-md-6 col-lg-2">Rol</div>
+                                <div class="col-4 col-md-6 col-lg-2">3D</div>
+                                <div class="col-4 col-md-6 col-lg-2">+</div>
+                                <div class="col-4 col-md-6 col-lg-4">PRECIO:</div>
+                                <div class="col-4 col-md-6 col-lg-8">40USD</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+        </section>
     </main>
-    <footer></footer>
+    <footer class=" navbar-dark bg-dark ">
+        <div class="footer-container">
+
+            <!-- Columna 1: Logo -->
+            <div class="footer-column footer-logo">
+                <img src="" alt="Logo del sitio">
+            </div>
+
+            <!-- Columna 2: Redes Sociales -->
+            <div class="footer-column">
+                <h4>Redes Sociales</h4>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 3: Información adicional -->
+            <div class="footer-column footer-info">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 5BITS. Todos los derechos reservados.
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
