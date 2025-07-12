@@ -116,6 +116,192 @@
             </div>
         </nav>
     </header>
+    <!-- 
+    
+    
+    modale inicio sesion
+     
+    
+    -->
+    <div class="modal fade" id="mi-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg"> <!-- Agrandamos el modal -->
+            <div class="modal-content efecto-glass">
+                <div class="modal-header texto-bienvenido text-center">
+                    <h5 class="modal-title text-white">Bienvenido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row contenedor-formulario-inicioSesion">
+                        <div class="col-12 col-md-6 p-3 order-1 order-md-1 g-4">
+                            <div class="mb-2">
+                                <label for="username" class="form-label text-white">Nombre de usuario</label>
+                                <input type="text" class="form-control form-control-sm" id="username"
+                                    placeholder="Usuario" minlength="4" maxlength="20" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="password" class="form-label text-white">Contraseña</label>
+                                <input type="password" class="form-control form-control-sm" id="password"
+                                    placeholder="Contraseña" minlength="10" maxlength="20" pattern="[A-Za-z0-9]{10,20}"
+                                    required>
+                                <small class="form-text text-white">Debe tener más de 10 caracteres (solo letras y
+                                    números)</small>
+                            </div>
+                            <div class="container text-center mt-5">
+                                <div class="row contenedor-iconos-login">
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4  text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-google"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-apple"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--
+                                <button type="submit" class="btn btn-primary btn-sm mt-2 mb-5">Iniciar Sesión</button>
+                            -->
+                            <div class="row mt-5">
+                                <div class="col-12 text-center">
+                                    <button class="btn-login">Iniciar Sesión</button>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <small class="form-text text-white"><a href="#"
+                                            class="enlace-olvidar-contraseña">¿Olvidaste tu contraseña?</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 contenedor-imagen-form order-2 order-md-2">
+                            <!-- Imagen se carga por CSS -->
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer bg-transparent border-0">
+                    <button type="button" class="btn btn-secondary btn-login" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    
+    
+    modale registro
+     
+    
+    -->
+
+    <div class="modal fade" id="mi-modal-registro" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg"> <!-- Agrandamos el modal -->
+            <div class="modal-content efecto-glass">
+                <div class="modal-header texto-bienvenido text-center">
+                    <h5 class="modal-title text-white">Bienvenido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row contenedor-formulario-inicioSesion">
+                        <div class="col-12 col-md-6 contenedor-imagen-form-registro order-2 order-md-2 g-4">
+                            <!-- Imagen por CSS -->
+                        </div>
+                        <div class="col-12 col-md-6 p-3 order-1 order-md-1">
+                            <div class="mb-2">
+                                <label for="name" class="form-label text-white">Nombre</label>
+                                <input type="text" class="form-control form-control-sm" id="name" placeholder="Nombre"
+                                    minlength="4" maxlength="20" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="lastname" class="form-label text-white">Apellido</label>
+                                <input type="text" class="form-control form-control-sm" id="lastname"
+                                    placeholder="Apellido" minlength="4" maxlength="20" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="email" class="form-label text-white">Gmail</label>
+                                <input type="email" class="form-control form-control-sm" id="email"
+                                    placeholder="Usuario" minlength="10" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="username" class="form-label text-white">Nombre de usuario</label>
+                                <input type="text" class="form-control form-control-sm" id="username"
+                                    placeholder="Nombre de usuario" minlength="4" maxlength="20" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="number" class="form-label text-white">Número de teléfono</label>
+                                <input type="tel" class="form-control form-control-sm" id="number" placeholder="381..."
+                                    minlength="10" pattern="[0-9]{10,}" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="myDate" class="form-label text-white">Fecha de nacimiento</label>
+                                <input type="date" class="form-control form-control-sm" name="myDate" id="myDate"
+                                    min="1970-06-01" max="2025-08-31" step="7" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="zipcode" class="form-label text-white">Código postal</label>
+                                <input type="text" class="form-control form-control-sm" id="zipcode"
+                                    placeholder="Código postal" minlength="4" pattern="[0-9]{4,}" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="password" class="form-label text-white">Contraseña</label>
+                                <input type="password" class="form-control form-control-sm" id="password"
+                                    placeholder="Contraseña" minlength="10" maxlength="20" pattern="[A-Za-z0-9]{10,20}"
+                                    required>
+                                <small class="form-text text-white">Debe tener más de 10 caracteres (solo letras y
+                                    números)</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="repeatpassword" class="form-label text-white">Repetir Contraseña</label>
+                                <input type="password" class="form-control form-control-sm" id="repeatpassword"
+                                    placeholder="Contraseña" minlength="10" maxlength="20" pattern="[A-Za-z0-9]{10,20}"
+                                    required>
+                                <small class="form-text text-white">Debe tener más de 10 caracteres (solo letras y
+                                    números)</small>
+                            </div>
+
+                            <div class="container text-center mt-5">
+                                <div class="row contenedor-iconos-login">
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-google"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-apple"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-5">
+                                <div class="col-12 text-center">
+                                    <button class="btn-login">Registarse</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer bg-transparent border-0">
+                    <button type="button" class="btn btn-secondary btn-login" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="container contenedor-logo">
             <div class="row justify-content-center">
@@ -123,8 +309,10 @@
                     <img src="/IMAGENES/FEATURES/MATIAS/Cruz_del_logo_png.png" class="img-fluid imagen-logo" alt="">
                 </div>
             </div>
-            <h1 class="display-2 text-center text-white">Bienvenido a la pagina nosotros, diceñamos esta pagina con
-                cariño, esperamos que disfruten</h1>
+            <h1 class="text-center text-white">Bienvenido a la pagina nosotros, diceñamos esta pagina con
+                cariño</h1>
+            <h1 class="text-danger text-center">Quisas las cosas no son faciles al principio, pero con trabajo en
+                    equipo logramos divertirnos y realizar una pagina que nos gusta</h1>
         </section>
         <section class="container-fluid mt-5">
             <div class="row justify-content-center g-4" id="pelea-1">
@@ -157,7 +345,7 @@
                 <div class="col-12 col-md-6 contenedor-matias-idea2 d-flex justify-content-between">
                     <div class="row">
                         <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center">
-                            <img src=""
+                            <img src="/IMAGENES/FEATURES/MATIAS/WhatsApp Image 2025-07-11 at 20.52.52.jpeg"
                                 class="img-fluid imagen-matias-idea-2" alt="">
                         </div>
                         <div class="col-12 col-md-6 col-lg-9 text-center">
@@ -178,29 +366,23 @@
                     </div>
                 </div>
             </div>
-              <div class="row justify-content-center g-4 mt-3" id="pelea-1">
+            <div class="row justify-content-center g-4 mt-3" id="pelea-1">
                 <div class="col-12 col-md-6 contenedor-matias-idea2 d-flex justify-content-between">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-9 text-center">
                             <div class="row">
                                 <div class="col-12 text-white">
-                                    <h2 class="display-1">Matias Lazarte</h2>
+                                    <h2 class="display-1">Romina Danelutto</h2>
                                 </div>
                                 <div class="col-12 text-white">
-                                    <p class="informacion">Soy estudiante de ingenieria en sistemas y de RollingCode</p>
+                                    <p class="informacion">Estudiante de RollingCode</p>
                                 </div>
-                                <div class="text-white informacion ">Enojado con harry, le discute cosas de codigo que
-                                    no sabe</div>
-                                <div class="text-white informacion ">Arrepentido de su amistad desde hace 7 años</div>
-
-                                <p class="text-danger mt-3">"LO QUE NO SALE A LA PRIMERA SALE EN LA SEGUNDA<br>Y LO QUE
-                                    NO
-                                    SALE
-                                    A LA SEGUNDA, SE INVADE ROMA"</p>
+                                <div class="text-white informacion "> Fan de "Podee cree que me salio?"</div>
                             </div>
+                            <p class="text-danger mt-3">"Novia de juan"</p>
                         </div>
                         <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center">
-                            <img src="/IMAGENES/FEATURES/MATIAS/ChatGPT Image 11 jul 2025, 12_35_20.png"
+                            <img src="/IMAGENES/FEATURES/MATIAS/WhatsApp Image 2025-07-11 at 21.12.17.jpeg"
                                 class="img-fluid imagen-matias-idea-2" alt="">
                         </div>
                     </div>
@@ -208,27 +390,66 @@
                 <div class="col-12 col-md-6 contenedor-matias-idea2 d-flex justify-content-between">
                     <div class="row">
                         <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center">
-                            <img src=""
+                            <img src="/IMAGENES/FEATURES/MATIAS/cartoon_boxer_character_2.jpg"
                                 class="img-fluid imagen-matias-idea-2" alt="">
                         </div>
                         <div class="col-12 col-md-6 col-lg-9 text-center">
                             <div class="row">
                                 <div class="col-12 text-white">
-                                    <h2 class="display-1">Harry Lizarraga</h2>
+                                    <h2 class="display-1">Juan Pablo Vergara</h2>
                                 </div>
                                 <div class="col-12 text-white">
-                                    <p class="informacion">Peso pesado, haciendo pasantia en una algodonera de mala
-                                        muerte</p>
+                                    <p class="informacion">Juan se fue de viaje de negocios, no sabemos nada de el,
+                                        esperamos su pronta llegada</p>
                                 </div>
-                                <div class="text-white informacion ">Hace enojar a matias por que se pone a discutir de
-                                    codigo que no sabe</div>
-
-                                <p class="text-danger mt-3">"Si la comida fuera un romanse, yo soy Romeo"</p>
+                                <p class="text-danger mt-3">"Novio de Romina"</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row justify-content-center g-4 mt-3 mb-5" id="pelea-1">
+                <div class="col-12 col-md-6 contenedor-matias-idea2 d-flex justify-content-between">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-9 text-center">
+                            <div class="row">
+                                <div class="col-12 text-white">
+                                    <h2 class="display-1">Giovanna Ianiero</h2>
+                                </div>
+                                <div class="col-12 text-white">
+                                    <p class="informacion">Estudiante de RollingCode</p>
+                                </div>
+                                <div class="text-white informacion ">La respetamos por hacer productos</div>
+                            </div>
+                            <p class="text-danger mt-3">Se volvio loca y se fue a Calafate</p>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center">
+                            <img src="/IMAGENES/FEATURES/MATIAS/cartoon_boxer_character.jpg"
+                                class="img-fluid imagen-matias-idea-2" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 contenedor-matias-idea2 d-flex justify-content-between">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center">
+                            <img src="/IMAGENES/FEATURES/MATIAS/1c9478ed-5caa-42d2-b854-74b19c5854a4.png"
+                                class="img-fluid imagen-matias-idea-2" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-9 text-center">
+                            <div class="row">
+                                <div class="col-12 text-white">
+                                    <h2 class="display-1">Computadora de Giovana</h2>
+                                </div>
+                                <div class="col-12 text-white">
+                                    <p class="informacion">No hizo nada malo pero Giovana la trata mal</p>
+                                </div>
+                                <p class="text-danger mt-3">El problema esta entre la pc y la silla</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
 
@@ -246,11 +467,11 @@
             <div class="footer-column">
                 <h4>Redes Sociales</h4>
                 <div class="footer-socials">
-                    <a href="#" class="text-warning" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-warning" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" class="text-warning" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="text-warning" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-warning" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="text-danger" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-danger" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="text-danger" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-danger" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-danger" aria-label="Discord"><i class="fab fa-discord"></i></a>
                 </div>
             </div>
 
@@ -258,10 +479,10 @@
             <div class="footer-column footer-info">
                 <h4>Información</h4>
                 <ul>
-                    <li><a href="#" class="text-warning">Política de privacidad</a></li>
-                    <li><a href="#" class="text-warning">Términos de uso</a></li>
-                    <li><a href="#" class="text-warning">Contacto</a></li>
-                    <li><a href="#" class="text-warning">Soporte</a></li>
+                    <li><a href="#" class="text-danger">Política de privacidad</a></li>
+                    <li><a href="#" class="text-danger">Términos de uso</a></li>
+                    <li><a href="#" class="text-danger">Contacto</a></li>
+                    <li><a href="#" class="text-danger">Soporte</a></li>
                 </ul>
             </div>
 
