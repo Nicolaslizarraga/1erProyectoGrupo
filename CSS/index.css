@@ -1,4 +1,4 @@
-*{
+* {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -48,7 +48,7 @@ body {
 .nav-link.active {
   background-color: rgba(255, 255, 255, 0.1);
 }
-/* Suavizar el dropdown */
+
 .navbar .dropdown-menu {
   transition: opacity 0.3s, transform 0.3s;
   opacity: 0;
@@ -157,12 +157,37 @@ body {
   margin-right: 8px;
 }
 
-.color-nombre{
+.color-nombre {
   color: red;
+}
+/* ===== paginacion ===== */
+/* Estilos personalizados para la paginación */
+.pagination .page-link {
+  color: #fff; /* Texto blanco */
+  background-color: #6c5ce7; /* Fondo morado */
+  border: none;
+  margin: 0 5px;
+  border-radius: 8px !important;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: all 0.3s;
+}
+
+.pagination .page-link:hover {
+  background-color: #a29bfe; /* Color hover más claro */
+  transform: scale(1.05);
+}
+
+.pagination .active .page-link {
+  background-color: #ff7675 !important; /* Color activo (rojo/rosado) */
+  box-shadow: 0 4px 8px rgba(255, 118, 117, 0.3);
+}
+
+.pagination .disabled .page-link {
+  background-color: #b2bec3 !important; /* Color deshabilitado (gris) */
 }
 
 /* ===== MODAL ===== */
-
 
 #mi-modal {
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
@@ -172,7 +197,6 @@ body {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-
 }
 #mi-modal-registro {
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
@@ -182,7 +206,6 @@ body {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
- 
 }
 /* Imagen derecha */
 .contenedor-imagen-form {
@@ -204,7 +227,6 @@ body {
   border-bottom-right-radius: 15px;
   min-height: 200px;
 }
-
 /* Ajustes para textos */
 .form-text {
   font-size: 0.75rem;
@@ -284,51 +306,47 @@ button[type="submit"] {
   }
 }
 
-
 /* ===== FIN  MODAL ===== */
 
-
 /* ===== Contenedor categorias ===== */
-.tendencia{
+.tendencia {
   background-image: url("/IMAGENES/FEATURES/MATIAS/TENDENCIA.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.accion{
+.accion {
   background-image: url("/IMAGENES/FEATURES/MATIAS/accion.avif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.simulacion{
+.simulacion {
   background-image: url("/IMAGENES/FEATURES/MATIAS/simulacion.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.estrategia{
+.estrategia {
   background-image: url("/IMAGENES/FEATURES/MATIAS/estrategia.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.top-valorados{
+.top-valorados {
   background-image: url("/IMAGENES/FEATURES/MATIAS/top-valorados.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.RPG{
+.RPG {
   background-image: url("/IMAGENES/FEATURES/MATIAS/RPG.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
-
 
 .category-card {
   text-decoration: none;
@@ -367,12 +385,10 @@ button[type="submit"] {
   margin: 0 auto;
   opacity: 0;
   transition: opacity 0.3s ease;
-
 }
 
 .category-card:hover .hover-indicator {
   opacity: 1;
-  
 }
 
 .text-gradient-primary {
@@ -417,15 +433,9 @@ button[type="submit"] {
   -webkit-text-fill-color: transparent;
 }
 
-
-
 /* CARDS  */
 
-
-
 /* ----- CONTENEDOR PRINCIPAL ----- */
-
-
 
 .game-card {
   position: relative;
@@ -576,7 +586,6 @@ button[type="submit"] {
   font-weight: bold;
 }
 
-
 /* Carousel */
 
 .contenedor-carousel {
@@ -591,7 +600,7 @@ button[type="submit"] {
   object-position: 30% 20%; /* Más control aún, en porcentaje */
 }
 
-/* carousel2 */
+/* carousel */
 
 #carousel-promos .carousel-item {
   width: 100%;
