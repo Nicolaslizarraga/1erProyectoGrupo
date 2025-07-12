@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de videojuegos-proyectoRolling">
+    <meta name="author" content="Nicolas, Matias, Juan, Romina, Giovanna">
+    <meta name="keywords" content="HTML, CSS, BOOTSTRAP, juegos, videojuegos, RPG, accion , tienda, tienda de juegos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CSS/404.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bytesized&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital@0;1&family=Oooh+Baby&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Russo+One&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-uGQ8Y1nE0X9v5oU3G2M5N3K1E6P9z2wR+QJekq2N4L5n3r2K+ZlIqV1Xa+8xMPKpYq5VfZz4u8d8+Hnd9x7uFw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b75d53b146.js" crossorigin="anonymous"></script>
+    <title>L5B</title>
+</head>
+
+<body>
+    <header>
+        <!--// navbar-dark bg-dark-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top mb-5" data-bs-theme="dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="./IMAGENES/FEATURES/MATIAS/Steam_Logo.png" alt="" height="40">
+                    <span>L5B</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/PAGES/nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="/PAGES/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#accion">Accion</a></li>
+                                <li><a class="dropdown-item" href="#aventura">Aventura</a></li>
+                                <li><a class="dropdown-item" href="#deportes">Deportes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#todos">Ver todas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <form class="d-flex me-3 search-form">
+                            <input class="form-control" type="search" placeholder="Buscar juegos...">
+                            <button class="btn btn-search" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+
+                        <div class="dropdown">
+                            <a class="btn btn-account dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-person-circle me-1"></i> Mi cuenta
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="/PAGES/404.html">Perfil</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#mi-modal">Inicio de sesion</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#mi-modal-registro">Registrarse</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/PAGES/404.html">Lista de
+                                        deseos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/PAGES/carrito.html">Carrito</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/PAGES/404.html">Cerrar
+                                        sesión</a></li>
+                            </ul>
+                        </div>
+
+
+                        <a href="#" class="btn btn-cart ms-3">
+                            <i class="fa-solid fa-cart-shopping text-warning"></i>
+                            <span class="cart-badge text-warning">3</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 
+        
+    
+modale inicio sesion
+    
+    
+    -->
+    <div class="modal fade" id="mi-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg"> <!-- Agrandamos el modal -->
+            <div class="modal-content efecto-glass">
+                <div class="modal-header texto-bienvenido text-center">
+                    <h5 class="modal-title text-white">Bienvenido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row contenedor-formulario-inicioSesion">
+                        <div class="col-12 col-md-6 p-3 order-1 order-md-1 g-4">
+                            <div class="mb-2">
+                                <label for="username" class="form-label text-white">Nombre de usuario</label>
+                                <input type="text" class="form-control form-control-sm" id="username"
+                                    placeholder="Usuario" minlength="4" maxlength="20" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="password" class="form-label text-white">Contraseña</label>
+                                <input type="password" class="form-control form-control-sm" id="password"
+                                    placeholder="Contraseña" minlength="10" maxlength="20" pattern="[A-Za-z0-9]{10,20}"
+                                    required>
+                                <small class="form-text text-white">Debe tener más de 10 caracteres (solo letras y
+                                    números)</small>
+                            </div>
+                            <div class="container text-center mt-5">
+                                <div class="row contenedor-iconos-login">
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4  text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-google"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-apple"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--
+                                    <button type="submit" class="btn btn-primary btn-sm mt-2 mb-5">Iniciar Sesión</button>
+                                    -->
+                            <div class="row mt-5">
+                                <div class="col-12 text-center">
+                                    <button class="btn-login">Iniciar Sesión</button>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <small class="form-text text-white"><a href="#"
+                                            class="enlace-olvidar-contraseña">¿Olvidaste tu contraseña?</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 contenedor-imagen-form order-2 order-md-2">
+                            <!-- Imagen se carga por CSS -->
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer bg-transparent border-0">
+                    <button type="button" class="btn btn-secondary btn-login" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+            
+        
+        modale registro
+        
+    
+        -->
+
+    <div class="modal fade" id="mi-modal-registro" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg"> <!-- Agrandamos el modal -->
+            <div class="modal-content efecto-glass">
+                <div class="modal-header texto-bienvenido text-center">
+                    <h5 class="modal-title text-white">Bienvenido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row contenedor-formulario-inicioSesion">
+                        <div class="col-12 col-md-6 contenedor-imagen-form-registro order-2 order-md-2 g-4">
+                            <!-- Imagen por CSS -->
+                        </div>
+                        <div class="col-12 col-md-6 p-3 order-1 order-md-1">
+                            <div class="mb-2">
+                                <label for="name" class="form-label text-white">Nombre</label>
+                                <input type="text" class="form-control form-control-sm" id="name" placeholder="Nombre"
+                                    minlength="4" maxlength="20" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="lastname" class="form-label text-white">Apellido</label>
+                                <input type="text" class="form-control form-control-sm" id="lastname"
+                                    placeholder="Apellido" minlength="4" maxlength="20" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="email" class="form-label text-white">Gmail</label>
+                                <input type="email" class="form-control form-control-sm" id="email"
+                                    placeholder="Usuario" minlength="10" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="username" class="form-label text-white">Nombre de usuario</label>
+                                <input type="text" class="form-control form-control-sm" id="username"
+                                    placeholder="Nombre de usuario" minlength="4" maxlength="20" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="number" class="form-label text-white">Número de teléfono</label>
+                                <input type="tel" class="form-control form-control-sm" id="number" placeholder="381..."
+                                    minlength="10" pattern="[0-9]{10,}" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="myDate" class="form-label text-white">Fecha de nacimiento</label>
+                                <input type="date" class="form-control form-control-sm" name="myDate" id="myDate"
+                                    min="1970-06-01" max="2025-08-31" step="7" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="zipcode" class="form-label text-white">Código postal</label>
+                                <input type="text" class="form-control form-control-sm" id="zipcode"
+                                    placeholder="Código postal" minlength="4" pattern="[0-9]{4,}" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="password" class="form-label text-white">Contraseña</label>
+                                <input type="password" class="form-control form-control-sm" id="password"
+                                    placeholder="Contraseña" minlength="10" maxlength="20" pattern="[A-Za-z0-9]{10,20}"
+                                    required>
+                                <small class="form-text text-white">Debe tener más de 10 caracteres (solo letras y
+                                    números)</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="repeatpassword" class="form-label text-white">Repetir Contraseña</label>
+                                <input type="password" class="form-control form-control-sm" id="repeatpassword"
+                                    placeholder="Contraseña" minlength="10" maxlength="20" pattern="[A-Za-z0-9]{10,20}"
+                                    required>
+                                <small class="form-text text-white">Debe tener más de 10 caracteres (solo letras y
+                                    números)</small>
+                            </div>
+
+                            <div class="container text-center mt-5">
+                                <div class="row contenedor-iconos-login">
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-google"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-apple"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-5">
+                                <div class="col-12 text-center">
+                                    <button class="btn-login">Registarse</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer bg-transparent border-0">
+                    <button type="button" class="btn btn-secondary btn-login" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container-fluid contenedor-padre">
+        <div class="container d-flex justify-content-center align-items-center h-100">
+            <div class="contenedor-hijo"></div>
+        </div>
+        <div class="boton-inicio">
+            <a href="/index.html">
+                <button class="btn btn-lg">Volver al inicio</button>
+            </a>
+        </div>
+    </section>
+        <footer class=" navbar-dark bg-dark ">
+        <div class="footer-container">
+
+            <!-- Columna 1: Logo -->
+            <div class="footer-column footer-logo">
+                <img src="" alt="Logo del sitio">
+            </div>
+
+            <!-- Columna 2: Redes Sociales -->
+            <div class="footer-column">
+                <h4>Redes Sociales</h4>
+                <div class="footer-socials">
+                    <a href="#" class="text-warning" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-warning" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="text-warning" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-warning" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-warning" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 3: Información adicional -->
+            <div class="footer-column footer-info">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#" class="text-warning">Política de privacidad</a></li>
+                    <li><a href="#" class="text-warning">Términos de uso</a></li>
+                    <li><a href="#" class="text-warning">Contacto</a></li>
+                    <li><a href="#" class="text-warning">Soporte</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 5BITS. Todos los derechos reservados.
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
