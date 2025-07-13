@@ -1,16 +1,16 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Racing Sans One", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Racing Sans One", sans-serif;
 }
 
 body {
-    background-image: url("/IMAGENES/FEATURES/GIOVANNA/imagen\ de\ fondo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 100px;
+  background-image: url("/IMAGENES/FONDOS/imagen\ de\ fondo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
 }
 
 /* ===== NAVBAR ===== */
@@ -159,7 +159,6 @@ body {
 
 /* ===== MODAL ===== */
 
-
 #mi-modal {
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
   background: rgba(255, 255, 255, 0.1); /* Transparente blanco */
@@ -168,7 +167,6 @@ body {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-
 }
 #mi-modal-registro {
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
@@ -178,11 +176,10 @@ body {
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
- 
 }
 /* Imagen derecha */
 .contenedor-imagen-form {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/leagueoflegends.jpg");
+  background-image: url("/IMAGENES/FEATURES/GIOVANNA/leagueoflegends.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100%;
@@ -191,7 +188,7 @@ body {
   min-height: 200px;
 }
 .contenedor-imagen-form-registro {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/metro-exodus-gif.gif");
+  background-image: url("/IMAGENES/FEATURES/GIOVANNA/metro-exodus-gif.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 55% 10%;
@@ -280,199 +277,205 @@ button[type="submit"] {
   }
 }
 
-
 /* ===== FIN  MODAL ===== */
 
 .video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
-
 
 /* Aseguramos que el video y la imagen compartan el mismo ancho */
 .col-12.col-md-6 {
-    padding: 0; /* Quitamos el padding que Bootstrap agrega por defecto */
+  padding: 0; /* Quitamos el padding que Bootstrap agrega por defecto */
 }
 
 /* Imagen debajo del video: ocupar todo el ancho */
 .contenedor-padre > img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 .boton-agregar-carrito {
-    /* Base */
-    font-family: 'Anton', sans-serif; /* Tipografía fuerte como el juego */
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 12px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    
-    /* Colores inspirados en God of War (rojo sangre, dorado, negro) */
-    background: linear-gradient(135deg, #0a0db8 0%, #351b4d 100%);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  /* Base */
+  font-family: "Anton", sans-serif; /* Tipografía fuerte como el juego */
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  /* Colores inspirados en God of War (rojo sangre, dorado, negro) */
+  background: linear-gradient(135deg, #0a0db8 0%, #351b4d 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Efecto hover (brillo y escala) */
 .boton-agregar-carrito:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Efecto activo (como un golpe) */
 .boton-agregar-carrito:active {
-    transform: translateY(1px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Detalle de runa nórdica (opcional) */
 .boton-agregar-carrito::after {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgba(245, 244, 237, 0.3);
-    font-size: 1rem;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(245, 244, 237, 0.3);
+  font-size: 1rem;
 }
 
-
 .opiniones-jugadores {
-    font-family: 'Arial', sans-serif;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #08041d;
-    border-radius: 8px;
+  font-family: "Arial", sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #08041d;
+  border-radius: 8px;
 }
 
 .titulo-opiniones {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
 .opinion-item {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
 }
 
 .opinion-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
 .opinion-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .texto-opinion {
-    line-height: 1.5;
-    margin: 0;
+  line-height: 1.5;
+  margin: 0;
 }
-
-
 
 /* ===== Footer ===== */
 
 footer {
-    width: 100%;
-    background-color: #210c24;
-    background-color: #c42021;
-    padding: 40px 20px;
+  /*background-color: #210c24;*/
+  background-color: #c42021;
+  padding: 40px 20px;
 }
 
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-column {
-    flex: 1 1 100%;
-    padding: 20px;
-    box-sizing: border-box;
+  flex: 1 1 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Para dispositivos medianos (tablets) */
 @media (min-width: 600px) {
-    .footer-column {
-        flex: 1 1 50%;
-    }
+  .footer-column {
+    flex: 1 1 50%;
+  }
 }
 
 /* Para dispositivos grandes */
 @media (min-width: 900px) {
-    .footer-column {
-        flex: 1 1 33.33%;
-    }
+  .footer-column {
+    flex: 1 1 33.33%;
+  }
 }
 
 .footer-logo img {
-    max-width: 160px;
+  max-width: 160px;
 }
 
 .footer-socials {
-    display: flex;
-    gap: 15px;
-    margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
 }
 
 .footer-socials a {
-    font-size: 20px;
-    color: #c6d4df;
-    transition: color 0.3s ease;
+  font-size: 1.6rem;
+  color: #c6d4df;
+  transition: color 0.3s ease;
 }
 
 .footer-socials a:hover {
-    color: #66c0f4;
+  color: #66c0f4;
+  transform: scale(1.8);
 }
 
 .footer-info h4 {
-    margin-bottom: 10px;
-    color: #ffffff;
+  margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .footer-info ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 .footer-info ul li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer-info a {
-    color: #c6d4df;
-    text-decoration: none;
+  color: #c6d4df;
+  text-decoration: none;
 }
 
 .footer-info a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 12px;
-    color: #8f98a0;
-    border-top: 1px solid #2a475e;
-    padding-top: 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #8f98a0;
+  border-top: 1px solid #2a475e;
+  padding-top: 20px;
+}
+
+@media (max-width: 425px) {
+  .publicidad-coca {
+    display: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
 }

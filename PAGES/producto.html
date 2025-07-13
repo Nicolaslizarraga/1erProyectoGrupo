@@ -4,28 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="detalle de producto">
-    <meta name="keywords" content="juegos de computadora, God Of War">
-    <meta name="author" content="Giovanna Ianiero-Matias Lazarte-Nicolas Lizarraga">
+    <meta name="description" content="Tienda de videojuegos-proyectoRolling">
+    <meta name="author" content="Nicolas, Matias, Juan, Romina, Giovanna">
+    <meta name="keywords" content="HTML, CSS, BOOTSTRAP, juegos, videojuegos, RPG, accion , tienda, tienda de juegos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/CSS/producto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bytesized&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital@0;1&family=Oooh+Baby&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Russo+One&family=Spicy+Rice&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/b75d53b146.js" crossorigin="anonymous"></script>
 
-    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-uGQ8Y1nE0X9v5oU3G2M5N3K1E6P9z2wR+QJekq2N4L5n3r2K+ZlIqV1Xa+8xMPKpYq5VfZz4u8d8+Hnd9x7uFw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b75d53b146.js" crossorigin="anonymous"></script>
+    <title>L5B</title>
 </head>
 
 <body>
+    <!--// navbar-dark bg-dark-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top mb-5" data-bs-theme="dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="./IMAGENES/LOGOS/Cruz_del_logo_png.png" alt="" height="40">
+                <span>L5B</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/PAGES/nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/PAGES/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#tendencia">Tendencia</a></li>
+                            <li><a class="dropdown-item" href="#accion">Accion</a></li>
+                            <li><a class="dropdown-item" href="#simulacion">Simulacion</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#todos">Ver todas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <form class="d-flex me-3 search-form">
+                        <input class="form-control" type="search" placeholder="Buscar juegos...">
+                        <button class="btn btn-search" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+                    <div class="dropdown">
+                        <a class="btn btn-account dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle me-1"></i> Mi cuenta
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="/PAGES/404.html">Perfil</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#mi-modal">Inicio de sesion</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#mi-modal-registro">Registrarse</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/PAGES/404.html">Lista de
+                                    deseos</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/PAGES/carrito.html">Carrito</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/PAGES/404.html">Cerrar
+                                    sesión</a></li>
+                        </ul>
+                    </div>
+
+
+                    <a href="/PAGES/carrito.html" class="btn btn-cart ms-3">
+                        <i class="fa-solid fa-cart-shopping text-warning"></i>
+                        <span class="cart-badge text-warning">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
     <header>
         <!--// navbar-dark bg-dark-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top mb-5" data-bs-theme="dark">
             <div class="container">
 
                 <a class="navbar-brand" href="#">
-                    <img src="./IMAGENES/FEATURES/MATIAS/Steam_Logo.png" alt="" height="40">
+                    <img src="./IMAGENES/LOGOS/Cruz_del_logo_png.png" alt="" height="40">
                     <span>L5B</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -50,9 +140,9 @@
                                 Categorias
                             </a>
                             <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#tendencia">Tendencia</a></li>
                                 <li><a class="dropdown-item" href="#accion">Accion</a></li>
-                                <li><a class="dropdown-item" href="#aventura">Aventura</a></li>
-                                <li><a class="dropdown-item" href="#deportes">Deportes</a></li>
+                                <li><a class="dropdown-item" href="#simulacion">Simulacion</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -69,7 +159,7 @@
                         </form>
 
                         <div class="dropdown">
-                            <a class="btn btn-account dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <a class="btn btn-account dropdown-toggle" role="button" data-bs-toggle="dropdown">
                                 <i class="bi bi-person-circle me-1"></i> Mi cuenta
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
@@ -95,7 +185,7 @@
                         </div>
 
 
-                        <a href="#" class="btn btn-cart ms-3">
+                        <a href="/PAGES/carrito.html" class="btn btn-cart ms-3">
                             <i class="fa-solid fa-cart-shopping text-warning"></i>
                             <span class="cart-badge text-warning">3</span>
                         </a>
@@ -104,6 +194,7 @@
             </div>
         </nav>
     </header>
+
     <!-- 
     
     
@@ -155,10 +246,11 @@
                             -->
                             <div class="row mt-5">
                                 <div class="col-12 text-center">
-                                    <button class="btn-login">Iniciar Sesión</button>
+                                    <a href="/PAGES/404.html"><button class="btn-login">Iniciar Sesión</button></a>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <small class="form-text text-white"><a href="#"
+                                    <small class="form-text text-white"><a
+                                            href="https://support.google.com/accounts/answer/41078?hl=es-419&co=GENIE.Platform%3DAndroid"
                                             class="enlace-olvidar-contraseña">¿Olvidaste tu contraseña?</a></small>
                                 </div>
                             </div>
@@ -170,7 +262,8 @@
                 </div>
 
                 <div class="modal-footer bg-transparent border-0">
-                    <button type="button" class="btn btn-secondary btn-login" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary btn-login"
+                        data-bs-dismiss="modal">Cerrar</button></a>
                 </div>
             </div>
         </div>
@@ -277,7 +370,7 @@
 
                             <div class="row mt-5">
                                 <div class="col-12 text-center">
-                                    <button class="btn-login">Registarse</button>
+                                    <a href=""><button class="btn-login">Registarse</button></a>
                                 </div>
                             </div>
                         </div>
@@ -297,7 +390,9 @@
             <div class="row">
                 <div class="col-12 col-md-8 mb-3">
                     <video class="video" controls autoplay muted loop>
-                        <source src="https://video.akamai.steamstatic.com/store_trailers/257054534/movie480_vp9.webm?t=1726759092"> type="video/webm">
+                        <source
+                            src="https://video.akamai.steamstatic.com/store_trailers/257054534/movie480_vp9.webm?t=1726759092">
+                        type="video/webm">
                     </video>
                 </div>
                 <div class="col-12 col-md-4  contenedor-padre">
@@ -312,59 +407,59 @@
             </div>
         </section>
         <section class=" container-fluid mb-5">
-            <div class="row">
-                <div class="col 12 col-md-7">
-                    <p class="text-white">LA SAGA NÓRDICA CONTINÚA</p>
-                    <p class="text-white"> Desarrollado por Santa Monica Studio y adaptado para PC en
-                        colaboración con
-                        Jetpack Interactive,
-                        llega God of War Ragnarök, un épico y emotivo viaje en el que Kratos y Atreus deberán
-                        decidir a
-                        qué se aferran y qué dejan ir. </p>
-
-                    <p class="text-white"> En God of War Ragnarök, la secuela del aclamado God of War (2018), el
-                        Fimbulvetr está en marcha.
-                        Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas
-                        mientras las
-                        fuerzas asgardianas de Odín se preparan para la batalla profetizada que supondrá el fin
-                        del
-                        mundo.</p>
-
-                    <p class="text-white">Por el camino, explorarán paisajes míticos increíbles y se enfrentarán
-                        a
-                        temibles enemigos, como
-                        monstruos y dioses nórdicos. A medida que se avecina la amenaza del Ragnarök, Kratos y
-                        Atreus
-                        tendrán que elegir entre la seguridad de su familia y la de los reinos. </p>
-                    </p>
-                </div>
-                <div class="col-12 col-md-5 pb-3 text-white">
                     <div class="row">
-                        <div class="col-6 col-md-7 col-lg-4">RESEÑAS RECIENTES:</div>
-                        <div class="col-6 col-md-5 col-lg-8">Muy Positivas</div>
-                        <div class="col 5 col-md-7 col-lg-4">RESEÑAS GENERALES:</div>
-                        <div class="col-6 col-md-5 col-lg-8">Muy Positivas</div>
-                        <div class="col-6 col-md-12 col-lg-4">FECHA DE LANZAMIENTO:</div>
-                        <div class="col-6 col-md-12 col-lg-8">19 SEP 2024</div>
-                        <div class="col-4 col-md-12 col-lg-4">DESARROLLADOR:</div>
-                        <div class="col-8 col-md-12 col-lg-8">Santa Monica Studio, Jetpack Interactive </div>
-                        <div class="col-4 col-md-12 col-lg-4">EDITOR:</div>
-                        <div class="col-8 col-md-12 col-lg-8">PlayStation Publishing LLC</div>
-                        <div class="col-12 col-md-12 col-lg-12">Etiquetas populares para este producto:</div>
-                        <div class="col-3 col-md-6 col-lg-4">Acción</div>
-                        <div class="col-3 col-md-6 col-lg-4">Aventura<a href="#"></a></div>
-                        <div class="col-6 col-md-6 col lg-3">Accion y Aventura</div>
-                        <div class="col-4 col-md-6 col-lg-2">Rol</div>
-                        <div class="col-4 col-md-6 col-lg-2">3D</div>
-                        <div class="col-4 col-md-6 col-lg-2">+</div>
-                        <div class="col-4 col-md-6 col-lg-4">PRECIO:</div>
-                        <div class="col-4 col-md-6 col-lg-4">40USD</div>
+                        <div class="col 12 col-md-7">
+                            <p class="text-white">LA SAGA NÓRDICA CONTINÚA</p>
+                            <p class="text-white"> Desarrollado por Santa Monica Studio y adaptado para PC en
+                                colaboración con
+                                Jetpack Interactive,
+                                llega God of War Ragnarök, un épico y emotivo viaje en el que Kratos y Atreus deberán
+                                decidir a
+                                qué se aferran y qué dejan ir. </p>
+
+                            <p class="text-white"> En God of War Ragnarök, la secuela del aclamado God of War (2018), el
+                                Fimbulvetr está en marcha.
+                                Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas
+                                mientras las
+                                fuerzas asgardianas de Odín se preparan para la batalla profetizada que supondrá el fin
+                                del
+                                mundo.</p>
+
+                            <p class="text-white">Por el camino, explorarán paisajes míticos increíbles y se enfrentarán
+                                a
+                                temibles enemigos, como
+                                monstruos y dioses nórdicos. A medida que se avecina la amenaza del Ragnarök, Kratos y
+                                Atreus
+                                tendrán que elegir entre la seguridad de su familia y la de los reinos. </p>
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-5 pb-3 text-white">
+                            <div class="row">
+                                <div class="col-6 col-md-7 col-lg-4">RESEÑAS RECIENTES:</div>
+                                <div class="col-6 col-md-5 col-lg-8">Muy Positivas</div>
+                                <div class="col 5 col-md-7 col-lg-4">RESEÑAS GENERALES:</div>
+                                <div class="col-6 col-md-5 col-lg-8">Muy Positivas</div>
+                                <div class="col-6 col-md-12 col-lg-4">FECHA DE LANZAMIENTO:</div>
+                                <div class="col-6 col-md-12 col-lg-8">19 SEP 2024</div>
+                                <div class="col-4 col-md-12 col-lg-4">DESARROLLADOR:</div>
+                                <div class="col-8 col-md-12 col-lg-8">Santa Monica Studio, Jetpack Interactive </div>
+                                <div class="col-4 col-md-12 col-lg-4">EDITOR:</div>
+                                <div class="col-8 col-md-12 col-lg-8">PlayStation Publishing LLC</div>
+                                <div class="col-12 col-md-12 col-lg-12">Etiquetas populares para este producto:</div>
+                                <div class="col-3 col-md-6 col-lg-4">Acción</div>
+                                <div class="col-3 col-md-6 col-lg-4">Aventura<a href="#"></a></div>
+                                <div class="col-6 col-md-6 col lg-3">Accion y Aventura</div>
+                                <div class="col-4 col-md-6 col-lg-2">Rol</div>
+                                <div class="col-4 col-md-6 col-lg-2">3D</div>
+                                <div class="col-4 col-md-6 col-lg-2">+</div>
+                                <div class="col-4 col-md-6 col-lg-4">PRECIO:</div>
+                                <div class="col-4 col-md-6 col-lg-4">40USD</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-4 col-md-6 col-lg-4"><a href="/PAGES/carrito.html"><button
-                        class="boton-agregar-carrito text-white">Agregar al carrito</button></a>
-            </div>
+                    <div class="col-4 col-md-6 col-lg-4"><a href="/PAGES/carrito.html"><button
+                                class="boton-agregar-carrito text-white">Agregar al carrito</button></a>
+                    </div>
         </section>
         <section class="container-fluid opiniones-jugadores mt-5 pt-5">
             <div class="row">
@@ -403,23 +498,28 @@
             </div>
         </section>
     </main>
-    <footer class=" navbar-dark bg-dark ">
+    <footer class=" navbar-dark bg-dark mt-5 ">
         <div class="footer-container">
 
             <!-- Columna 1: Logo -->
             <div class="footer-column footer-logo">
-                <img src="" alt="Logo del sitio">
+                <img src="/IMAGENES/LOGOS/Logo_completo_png.png" alt="Logo del sitio">
             </div>
 
             <!-- Columna 2: Redes Sociales -->
             <div class="footer-column">
                 <h4>Redes Sociales</h4>
                 <div class="footer-socials">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="/PAGES/404.html" class="text-danger" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="/PAGES/404.html" class="text-danger" aria-label="Twitter"><i
+                            class="fab fa-x-twitter"></i></a>
+                    <a href="/PAGES/404.html" class="text-danger" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="/PAGES/404.html" class="text-danger" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="/PAGES/404.html" class="text-danger" aria-label="Discord"><i
+                            class="fab fa-discord"></i></a>
                 </div>
             </div>
 
@@ -427,10 +527,10 @@
             <div class="footer-column footer-info">
                 <h4>Información</h4>
                 <ul>
-                    <li><a href="#">Política de privacidad</a></li>
-                    <li><a href="#">Términos de uso</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Soporte</a></li>
+                    <li><a href="/PAGES/404.html" class="text-danger">Política de privacidad</a></li>
+                    <li><a href="/PAGES/404.html" class="text-danger">Términos de uso</a></li>
+                    <li><a href="/PAGES/404.html" class="text-danger">Contacto</a></li>
+                    <li><a href="/PAGES/404.html" class="text-danger">Soporte</a></li>
                 </ul>
             </div>
 
@@ -440,9 +540,11 @@
             © 2025 5BITS. Todos los derechos reservados.
         </div>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
