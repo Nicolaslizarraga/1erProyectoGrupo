@@ -1,8 +1,14 @@
 *{
   font-family: "Bebas Neue", sans-serif;
 }
+*{
+  font-family: "Bebas Neue", sans-serif;
+}
 body {
   background-image: url("/IMAGENES/FONDOS/fondo.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -453,10 +459,11 @@ h3 {
   color: inherit;
 }
 
-/* ===== Footer ===== */
+
+/*===== Footer ===== */
 
 footer {
-  /*background-color: #210c24;*/
+  background-color: #210c24;
   background-color: #c42021;
   padding: 40px 20px;
 }
@@ -552,3 +559,4 @@ footer {
     padding: 0;
   }
 }
+
