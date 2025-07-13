@@ -1,20 +1,1646 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a simple HTML document with a title and a heading.">
+    <meta name="description" content="Tienda de videojuegos-proyectoRolling">
     <meta name="author" content="Nicolas, Matias, Juan, Romina, Giovanna">
-    <meta name="keywords" content="HTML, CSS, BOOTSTRAP, document">
+    <meta name="keywords" content="HTML, CSS, BOOTSTRAP, juegos, videojuegos, RPG, accion , tienda, tienda de juegos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shorcut icon" href="/IMAGENES/LOGOS/Cruz_del_logo_png.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-uGQ8Y1nE0X9v5oU3G2M5N3K1E6P9z2wR+QJekq2N4L5n3r2K+ZlIqV1Xa+8xMPKpYq5VfZz4u8d8+Hnd9x7uFw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <title>Proyecto Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bytesized&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital@0;1&family=Oooh+Baby&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Russo+One&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-uGQ8Y1nE0X9v5oU3G2M5N3K1E6P9z2wR+QJekq2N4L5n3r2K+ZlIqV1Xa+8xMPKpYq5VfZz4u8d8+Hnd9x7uFw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b75d53b146.js" crossorigin="anonymous"></script>
+    <title>L5B</title>
 </head>
+
 <body>
-    <header><h1>Larry</h1></header>
-    <main></main>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <header>
+        <!--// navbar-dark bg-dark-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top mb-5" data-bs-theme="dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="./IMAGENES/LOGOS/Cruz_del_logo_png.png" alt="" height="40">
+                    <span>L5B</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/PAGES/nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="/PAGES/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#tendencia">Tendencia</a></li>
+                                <li><a class="dropdown-item" href="#accion">Accion</a></li>
+                                <li><a class="dropdown-item" href="#simulacion">Simulacion</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#todos">Ver todas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <form class="d-flex me-3 search-form">
+                            <input class="form-control" type="search" placeholder="Buscar juegos...">
+                            <button class="btn btn-search">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+
+                        <div class="dropdown">
+                            <a class="btn btn-account dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-person-circle me-1"></i> Mi cuenta
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="/PAGES/404.html">Perfil</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#mi-modal">Inicio de sesion</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#mi-modal-registro">Registrarse</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/PAGES/404.html">Lista de
+                                        deseos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/PAGES/carrito.html">Carrito</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/PAGES/404.html">Cerrar
+                                        sesión</a></li>
+                            </ul>
+                        </div>
+
+
+                        <a href="/PAGES/carrito.html" class="btn btn-cart ms-3">
+                            <i class="fa-solid fa-cart-shopping text-warning"></i>
+                            <span class="cart-badge text-warning">3</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 
+    
+    
+    modale inicio sesion
+     
+    
+    -->
+    <div class="modal fade" id="mi-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg"> <!-- Agrandamos el modal -->
+            <div class="modal-content efecto-glass">
+                <div class="modal-header texto-bienvenido text-center">
+                    <h5 class="modal-title text-white">Bienvenido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row contenedor-formulario-inicioSesion">
+                        <div class="col-12 col-md-6 p-3 order-1 order-md-1 g-4">
+                            <div class="mb-2">
+                                <label for="username" class="form-label text-white">Nombre de usuario</label>
+                                <input type="text" class="form-control form-control-sm" id="username"
+                                    placeholder="Usuario" minlength="4" maxlength="20" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="password" class="form-label text-white">Contraseña</label>
+                                <input type="password" class="form-control form-control-sm" id="password"
+                                    placeholder="Contraseña" minlength="10" maxlength="20" pattern="[A-Za-z0-9]{10,20}"
+                                    required>
+                                <small class="form-text text-white">Debe tener más de 10 caracteres (solo letras y
+                                    números)</small>
+                            </div>
+                            <div class="container text-center mt-5">
+                                <div class="row contenedor-iconos-login">
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4  text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-google"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-apple"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--
+                                <button type="submit" class="btn btn-primary btn-sm mt-2 mb-5">Iniciar Sesión</button>
+                            -->
+                            <div class="row mt-5">
+                                <div class="col-12 text-center">
+                                   <a href="/PAGES/404.html"><button class="btn-login">Iniciar Sesión</button></a>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <small class="form-text text-white"><a href="https://support.google.com/accounts/answer/41078?hl=es-419&co=GENIE.Platform%3DAndroid"
+                                            class="enlace-olvidar-contraseña">¿Olvidaste tu contraseña?</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 contenedor-imagen-form order-2 order-md-2">
+                            <!-- Imagen se carga por CSS -->
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer bg-transparent border-0">
+                 <button type="button" class="btn btn-secondary btn-login" data-bs-dismiss="modal">Cerrar</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    
+    
+    modale registro
+     
+    
+    -->
+
+    <div class="modal fade" id="mi-modal-registro" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg"> <!-- Agrandamos el modal -->
+            <div class="modal-content efecto-glass">
+                <div class="modal-header texto-bienvenido text-center">
+                    <h5 class="modal-title text-white">Bienvenido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row contenedor-formulario-inicioSesion">
+                        <div class="col-12 col-md-6 contenedor-imagen-form-registro order-2 order-md-2 g-4">
+                            <!-- Imagen por CSS -->
+                        </div>
+                        <div class="col-12 col-md-6 p-3 order-1 order-md-1">
+                            <div class="mb-2">
+                                <label for="name" class="form-label text-white">Nombre</label>
+                                <input type="text" class="form-control form-control-sm" id="name" placeholder="Nombre"
+                                    minlength="4" maxlength="20" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="lastname" class="form-label text-white">Apellido</label>
+                                <input type="text" class="form-control form-control-sm" id="lastname"
+                                    placeholder="Apellido" minlength="4" maxlength="20" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="email" class="form-label text-white">Gmail</label>
+                                <input type="email" class="form-control form-control-sm" id="email"
+                                    placeholder="Usuario" minlength="10" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="username" class="form-label text-white">Nombre de usuario</label>
+                                <input type="text" class="form-control form-control-sm" id="username"
+                                    placeholder="Nombre de usuario" minlength="4" maxlength="20" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="number" class="form-label text-white">Número de teléfono</label>
+                                <input type="tel" class="form-control form-control-sm" id="number" placeholder="381..."
+                                    minlength="10" pattern="[0-9]{10,}" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="myDate" class="form-label text-white">Fecha de nacimiento</label>
+                                <input type="date" class="form-control form-control-sm" name="myDate" id="myDate"
+                                    min="1970-06-01" max="2025-08-31" step="7" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="zipcode" class="form-label text-white">Código postal</label>
+                                <input type="text" class="form-control form-control-sm" id="zipcode"
+                                    placeholder="Código postal" minlength="4" pattern="[0-9]{4,}" required>
+                                <small class="form-text text-white">El usuario debe tener más de 4 caracteres</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="password" class="form-label text-white">Contraseña</label>
+                                <input type="password" class="form-control form-control-sm" id="password"
+                                    placeholder="Contraseña" minlength="10" maxlength="20" pattern="[A-Za-z0-9]{10,20}"
+                                    required>
+                                <small class="form-text text-white">Debe tener más de 10 caracteres (solo letras y
+                                    números)</small>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="repeatpassword" class="form-label text-white">Repetir Contraseña</label>
+                                <input type="password" class="form-control form-control-sm" id="repeatpassword"
+                                    placeholder="Contraseña" minlength="10" maxlength="20" pattern="[A-Za-z0-9]{10,20}"
+                                    required>
+                                <small class="form-text text-white">Debe tener más de 10 caracteres (solo letras y
+                                    números)</small>
+                            </div>
+
+                            <div class="container text-center mt-5">
+                                <div class="row contenedor-iconos-login">
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-google"></i></a>
+                                    </div>
+                                    <div class="col-2 col-mb-4 col-lg-4 text-white iconos-login">
+                                        <a href=""><i class="fa-brands fa-apple"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-5">
+                                <div class="col-12 text-center">
+                                    <a href=""><button class="btn-login">Registarse</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer bg-transparent border-0">
+                   <button type="button" class="btn btn-secondary btn-login" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <p class="display-3 text-center text-light mt-5 pt-5">Bienvenidos a Los <span class="color-nombre">5 Bits</span>
+            <br> preparate para las
+            mejores
+            ofertas
+        </p>
+        <section class="container mt-5 pt-5">
+            <h1 class="display-4 text-light mb-4 text-center font-weight-bold">Explora por Categorías</h1>
+            <div class="row mt-4 justify-content-center">
+
+                <!-- Tendencia -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4 ">
+                    <a href="#tendencia" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover tendencia">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-arrow-trend-up fa-2x text-gradient-primary"></i>
+                            </div>
+                            <h5 class="text-light mb-0">Tendencia</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Acción -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#accion" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover accion">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-gun fa-2x text-gradient-danger"></i>
+                            </div>
+                            <h5 class="text-light mb-0">Acción</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Simulación -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#simulacion" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover simulacion">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-plane-departure fa-2x text-gradient-info"></i>
+                            </div>
+                            <h5 class="text-light mb-0">Simulación</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Estrategia -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="/index.html" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover estrategia">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-chess-knight fa-2x text-gradient-warning"></i>
+                            </div>
+                            <h5 class="text-light mb-0">Estrategia</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Mejor calificado -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="/index.html" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover top-valorados">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-face-kiss-wink-heart fa-2x text-gradient-pink"></i>
+                            </div>
+                            <h5 class="text-light mb-0">Top Valorados</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- RPG (reemplazo del duplicado de Estrategia) -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="/index.html" class="category-card">
+                        <div class="card bg-dark text-center p-4 h-100 border-0 rounded-lg shadow-hover RPG">
+                            <div class="icon-container mb-3">
+                                <i class="fa-solid fa-dragon fa-2x text-gradient-purple"></i>
+                            </div>
+                            <h5 class="text-light mb-0">RPG</h5>
+                            <div class="hover-indicator mt-2"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Carrusel de promociones -->
+        <section class="container-fluid mt-5 py-5">
+            <div class="row g-4 justify-content-center align-items-center ms-auto me-auto">
+                <div class="col-12 col-md-8 px-0 ">
+                    <div id="carousel-promos" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-slide"
+                                style="background-image: url('/IMAGENES/FEATURES/MATIAS/promo4.jpg');"></div>
+                            <div class="carousel-item bg-slide"
+                                style="background-image: url('/IMAGENES/FEATURES/MATIAS/promo1.webp');">
+                            </div>
+                            <div class="carousel-item bg-slide"
+                                style="background-image: url('/IMAGENES/FEATURES/MATIAS/promos3.webp');">
+                            </div>
+                            <div class="carousel-item bg-slide"
+                                style="background-image: url('/IMAGENES/FEATURES/MATIAS/promos4.png');">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-promos"
+                            data-bs-slide="prev"></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-promos"
+                            data-bs-slide="next"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--CARDS-->
+
+
+
+        <h1 class="display-1 text-center align-items-center text-danger" id="todos">Todos los juegos</h1>
+        <nav aria-label="...">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                    <a class="page-link" href="#" aria-current="page">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="container-fluid px-0">
+            <div class="row justify-content-center g-3 px-2">
+
+                <!-- Juego 1: Age of Mythology -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="./IMAGENES/FEATURES/MATIAS/AgeOfMytology.jpg" alt="Age of Mythology"
+                                    class="main-image">
+                                <div class="hover-video hover-age"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Age of Mythology</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Estrategia</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-25%</span>
+                                    <span class="old-price">$14.99</span>
+                                    <span class="new-price">$11.24 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 2: God of War -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="./IMAGENES/FEATURES/MATIAS/Godofwar.jpg" alt="God of War" class="main-image">
+                                <div class="hover-video hover-god"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>God of War</h5>
+                                <div class="tags">
+                                    <span>Aventura</span>
+                                    <span>Acción</span>
+                                    <span>Un jugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-30%</span>
+                                    <span class="old-price">$19.99</span>
+                                    <span class="new-price">$13.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 3: Call of Duty -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/call-of-duty-modern-warfare-2-task-force-i149551.jpg"
+                                    alt="Call of Duty" class="main-image">
+                                <div class="hover-video hover-call "></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Call of Duty</h5>
+                                <div class="tags">
+                                    <span>Shooter</span>
+                                    <span>Acción</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-20%</span>
+                                    <span class="old-price">$29.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 4: Horizon -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/Horizon.png" alt="Horizon" class="main-image">
+                                <div class="hover-video hover-horizon"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Horizon</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Acción</span>
+                                    <span>Aventura</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-40%</span>
+                                    <span class="old-price">$39.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center g-3 px-2 mt-5">
+
+                <!-- Juego 1: bioshock infinite -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/bioshocinfinite.jpg" alt="bioshock infinite"
+                                    class="main-image">
+                                <div class="hover-video hover-infinite"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>bioshock infinite</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Estrategia</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-25%</span>
+                                    <span class="old-price">$14.99</span>
+                                    <span class="new-price">$11.24 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 2: The witcher 3 -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/TheWitcher3-2.jpg" alt="The witcher 3 "
+                                    class="main-image">
+                                <div class="hover-video hover-witcher3"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>The witcher 3 </h5>
+                                <div class="tags">
+                                    <span>Aventura</span>
+                                    <span>Acción</span>
+                                    <span>Un jugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-30%</span>
+                                    <span class="old-price">$19.99</span>
+                                    <span class="new-price">$13.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 3: fortnite -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/fornite5.jpg" alt="fortnite" class="main-image">
+                                <div class="hover-video hover-fortnite"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>fortnite</h5>
+                                <div class="tags">
+                                    <span>Shooter</span>
+                                    <span>Acción</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-20%</span>
+                                    <span class="old-price">$29.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 4: grand theft auto v -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/gta5-2.jpg" alt="grand theft auto v"
+                                    class="main-image">
+                                <div class="hover-video hover-gta5"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>grand theft auto v</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Acción</span>
+                                    <span>Aventura</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-40%</span>
+                                    <span class="old-price">$39.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row justify-content-center g-3 px-2 mt-5">
+
+                <!-- Juego 1: hell let loose -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/hellloose.77caf06c-66b6-4ed8-ab29-73b2901b20d1"
+                                    alt="hell let loose" class="main-image">
+                                <div class="hover-video hover-hell"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>hell let loose</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Estrategia</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-25%</span>
+                                    <span class="old-price">$14.99</span>
+                                    <span class="new-price">$11.24 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 2: counter strike 2-->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/csgo.avif" alt="counter strike 2"
+                                    class="main-image">
+                                <div class="hover-video hover-csgo"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>counter strike 2</h5>
+                                <div class="tags">
+                                    <span>Aventura</span>
+                                    <span>Acción</span>
+                                    <span>Un jugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-30%</span>
+                                    <span class="old-price">$19.99</span>
+                                    <span class="new-price">$13.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 3: bioshock -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/bioshoc.jpg" alt="bioshock" class="main-image">
+                                <div class="hover-video hover-bioshoc"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>bioshock</h5>
+                                <div class="tags">
+                                    <span>Shooter</span>
+                                    <span>Acción</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-20%</span>
+                                    <span class="old-price">$29.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 4: bioshock 2 -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/bioshoc2.jpg" alt="bioshock 2" class="main-image">
+                                <div class="hover-video hover-bioshoc2"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>bioshock 2</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Acción</span>
+                                    <span>Aventura</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-40%</span>
+                                    <span class="old-price">$39.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row justify-content-center g-3 px-2 mt-5">
+
+                <!-- Juego 1: Age of Mythology -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="./IMAGENES/FEATURES/MATIAS/AgeOfMytology.jpg" alt="Age of Mythology"
+                                    class="main-image">
+                                <div class="hover-video hover-age"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Age of Mythology</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Estrategia</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-25%</span>
+                                    <span class="old-price">$14.99</span>
+                                    <span class="new-price">$11.24 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 2: God of War -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="./IMAGENES/FEATURES/MATIAS/Godofwar.jpg" alt="God of War" class="main-image">
+                                <div class="hover-video hover-god"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>God of War</h5>
+                                <div class="tags">
+                                    <span>Aventura</span>
+                                    <span>Acción</span>
+                                    <span>Un jugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-30%</span>
+                                    <span class="old-price">$19.99</span>
+                                    <span class="new-price">$13.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 3: Call of Duty -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/call-of-duty-modern-warfare-2-task-force-i149551.jpg"
+                                    alt="Call of Duty" class="main-image">
+                                <div class="hover-video hover-call "></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Call of Duty</h5>
+                                <div class="tags">
+                                    <span>Shooter</span>
+                                    <span>Acción</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-20%</span>
+                                    <span class="old-price">$29.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 4: Horizon -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/Horizon.png" alt="Horizon" class="main-image">
+                                <div class="hover-video hover-horizon"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Horizon</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Acción</span>
+                                    <span>Aventura</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-40%</span>
+                                    <span class="old-price">$39.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row justify-content-center g-3 px-2 mt-5">
+
+                <!-- Juego 1: Age of Mythology -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="./IMAGENES/FEATURES/MATIAS/AgeOfMytology.jpg" alt="Age of Mythology"
+                                    class="main-image">
+                                <div class="hover-video hover-age"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Age of Mythology</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Estrategia</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-25%</span>
+                                    <span class="old-price">$14.99</span>
+                                    <span class="new-price">$11.24 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 2: God of War -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="./IMAGENES/FEATURES/MATIAS/Godofwar.jpg" alt="God of War" class="main-image">
+                                <div class="hover-video hover-god"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>God of War</h5>
+                                <div class="tags">
+                                    <span>Aventura</span>
+                                    <span>Acción</span>
+                                    <span>Un jugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-30%</span>
+                                    <span class="old-price">$19.99</span>
+                                    <span class="new-price">$13.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 3: Call of Duty -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/call-of-duty-modern-warfare-2-task-force-i149551.jpg"
+                                    alt="Call of Duty" class="main-image">
+                                <div class="hover-video hover-call "></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Call of Duty</h5>
+                                <div class="tags">
+                                    <span>Shooter</span>
+                                    <span>Acción</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-20%</span>
+                                    <span class="old-price">$29.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 4: Horizon -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/Horizon.png" alt="Horizon" class="main-image">
+                                <div class="hover-video hover-horizon"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Horizon</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Acción</span>
+                                    <span>Aventura</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-40%</span>
+                                    <span class="old-price">$39.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row justify-content-center g-3 px-2 mt-5">
+
+                <!-- Juego 1: hell let loose -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/hellloose.77caf06c-66b6-4ed8-ab29-73b2901b20d1"
+                                    alt="hell let loose" class="main-image">
+                                <div class="hover-video hover-hell"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>hell let loose</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Estrategia</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-25%</span>
+                                    <span class="old-price">$14.99</span>
+                                    <span class="new-price">$11.24 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 2: counter strike 2-->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/csgo.avif" alt="counter strike 2"
+                                    class="main-image">
+                                <div class="hover-video hover-csgo"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>counter strike 2</h5>
+                                <div class="tags">
+                                    <span>Aventura</span>
+                                    <span>Acción</span>
+                                    <span>Un jugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-30%</span>
+                                    <span class="old-price">$19.99</span>
+                                    <span class="new-price">$13.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 3: bioshock -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/bioshoc.jpg" alt="bioshock" class="main-image">
+                                <div class="hover-video hover-bioshoc"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>bioshock</h5>
+                                <div class="tags">
+                                    <span>Shooter</span>
+                                    <span>Acción</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-20%</span>
+                                    <span class="old-price">$29.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 4: bioshock 2 -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/bioshoc2.jpg" alt="bioshock 2" class="main-image">
+                                <div class="hover-video hover-bioshoc2"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>bioshock 2</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Acción</span>
+                                    <span>Aventura</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-40%</span>
+                                    <span class="old-price">$39.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="container-fluid px-0 mt-5">
+            <h1 class="text-center text-white display-1 mt-3" id="tendencia">Tendencia</h1>
+            <div class="row justify-content-center g-3 px-2">
+
+                <!-- Juego 1: Age of Mythology -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="./IMAGENES/FEATURES/MATIAS/AgeOfMytology.jpg" alt="Age of Mythology"
+                                    class="main-image">
+                                <div class="hover-video hover-age"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Age of Mythology</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Estrategia</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-25%</span>
+                                    <span class="old-price">$14.99</span>
+                                    <span class="new-price">$11.24 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 2: God of War -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="./IMAGENES/FEATURES/MATIAS/Godofwar.jpg" alt="God of War" class="main-image">
+                                <div class="hover-video hover-god"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>God of War</h5>
+                                <div class="tags">
+                                    <span>Aventura</span>
+                                    <span>Acción</span>
+                                    <span>Un jugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-30%</span>
+                                    <span class="old-price">$19.99</span>
+                                    <span class="new-price">$13.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 3: Call of Duty -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/call-of-duty-modern-warfare-2-task-force-i149551.jpg"
+                                    alt="Call of Duty" class="main-image">
+                                <div class="hover-video hover-call"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Call of Duty</h5>
+                                <div class="tags">
+                                    <span>Shooter</span>
+                                    <span>Acción</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-20%</span>
+                                    <span class="old-price">$29.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 4: Horizon -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/Horizon.png" alt="Horizon" class="main-image">
+                                <div class="hover-video hover-horizon"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Horizon</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Acción</span>
+                                    <span>Aventura</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-40%</span>
+                                    <span class="old-price">$39.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide mt-5">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active contenedor-carousel">
+                        <img src="/IMAGENES/FEATURES/MATIAS/liesofp.jpg" class="d-block w-100 img-fluid " alt="...">
+                    </div>
+                    <div class="carousel-item contenedor-carousel">
+                        <img src="/IMAGENES/FEATURES/MATIAS/reddeadredemption2.png" style="object-position: 30% 73%;"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item contenedor-carousel">
+                        <img src="/IMAGENES/FEATURES/MATIAS/metrosam.jpeg" style="object-position: 30% 10%;"
+                            class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+            <div class="row justify-content-center mt-5 publicidad-coca">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="/IMAGENES/FEATURES/MATIAS/coca-publicidad-2.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row justify-content-center g-3 px-2 mt-5">
+                <h1 class="text-center text-white display-1 mt-3" id="accion">Accion</h1>
+
+                <!-- Juego 1: Age of Mythology -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/bioshocinfinite.jpg" alt="Age of Mythology"
+                                    class="main-image">
+                                <div class="hover-video hover-infinite"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Age of Mythology</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Estrategia</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-25%</span>
+                                    <span class="old-price">$14.99</span>
+                                    <span class="new-price">$11.24 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 2: God of War -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/TheWitcher3-2.jpg" alt="God of War"
+                                    class="main-image">
+                                <div class="hover-video hover-witcher3"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>God of War</h5>
+                                <div class="tags">
+                                    <span>Aventura</span>
+                                    <span>Acción</span>
+                                    <span>Un jugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-30%</span>
+                                    <span class="old-price">$19.99</span>
+                                    <span class="new-price">$13.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 3: Call of Duty -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/fornite5.jpg" alt="Call of Duty" class="main-image">
+                                <div class="hover-video hover-fortnite"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Call of Duty</h5>
+                                <div class="tags">
+                                    <span>Shooter</span>
+                                    <span>Acción</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-20%</span>
+                                    <span class="old-price">$29.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 4: Horizon -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/gta5-2.jpg" alt="Horizon" class="main-image">
+                                <div class="hover-video hover-gta5"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Horizon</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Acción</span>
+                                    <span>Aventura</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-40%</span>
+                                    <span class="old-price">$39.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center g-3 px-2 mt-5">
+
+                <!-- Juego 1: Age of Mythology -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="./IMAGENES/FEATURES/MATIAS/AgeOfMytology.jpg" alt="Age of Mythology"
+                                    class="main-image">
+                                <div class="hover-video hover-age"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Age of Mythology</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Estrategia</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-25%</span>
+                                    <span class="old-price">$14.99</span>
+                                    <span class="new-price">$11.24 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 2: God of War -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="./IMAGENES/FEATURES/MATIAS/Godofwar.jpg" alt="God of War" class="main-image">
+                                <div class="hover-video hover-god"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>God of War</h5>
+                                <div class="tags">
+                                    <span>Aventura</span>
+                                    <span>Acción</span>
+                                    <span>Un jugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-30%</span>
+                                    <span class="old-price">$19.99</span>
+                                    <span class="new-price">$13.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 3: Call of Duty -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/call-of-duty-modern-warfare-2-task-force-i149551.jpg"
+                                    alt="Call of Duty" class="main-image">
+                                <div class="hover-video hover-call "></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Call of Duty</h5>
+                                <div class="tags">
+                                    <span>Shooter</span>
+                                    <span>Acción</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-20%</span>
+                                    <span class="old-price">$29.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 4: Horizon -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container">
+                                <img src="/IMAGENES/FEATURES/MATIAS/Horizon.png" alt="Horizon" class="main-image">
+                                <div class="hover-video hover-horizon"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Horizon</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Acción</span>
+                                    <span>Aventura</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-40%</span>
+                                    <span class="old-price">$39.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row justify-content-center ms-auto me-auto mt-5">
+                <h1 class="text-center text-white display-1 mt-3" id="simulacion">Simulacion</h1>
+
+                <!-- Juego 1: Age of Mythology -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/hellloose.77caf06c-66b6-4ed8-ab29-73b2901b20d1"
+                                    alt="Age of Mythology" class="main-image">
+                                <div class="hover-video hover-hell"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Age of Mythology</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Estrategia</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-25%</span>
+                                    <span class="old-price">$14.99</span>
+                                    <span class="new-price">$11.24 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 2: God of War -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/csgo.avif" alt="God of War" class="main-image">
+                                <div class="hover-video hover-csgo"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>God of War</h5>
+                                <div class="tags">
+                                    <span>Aventura</span>
+                                    <span>Acción</span>
+                                    <span>Un jugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-30%</span>
+                                    <span class="old-price">$19.99</span>
+                                    <span class="new-price">$13.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 3: Call of Duty -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/bioshoc.jpg" alt="Call of Duty" class="main-image">
+                                <div class="hover-video hover-bioshoc"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Call of Duty</h5>
+                                <div class="tags">
+                                    <span>Shooter</span>
+                                    <span>Acción</span>
+                                    <span>Multijugador</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-20%</span>
+                                    <span class="old-price">$29.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Juego 4: Horizon -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="./PAGES/404.html">
+                        <div class="game-card">
+                            <div class="image-container2">
+                                <img src="/IMAGENES/FEATURES/MATIAS/bioshoc2.jpg" alt="Horizon" class="main-image">
+                                <div class="hover-video hover-bioshoc2"></div>
+                            </div>
+                            <div class="game-info">
+                                <h5>Horizon</h5>
+                                <div class="tags">
+                                    <span>Mundo abierto</span>
+                                    <span>Acción</span>
+                                    <span>Aventura</span>
+                                </div>
+                                <div class="price-section">
+                                    <button class="btn-cart">Agregar al carrito</button>
+                                    <span class="discount">-40%</span>
+                                    <span class="old-price">$39.99</span>
+                                    <span class="new-price">$23.99 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row justify-content-center mt-5 mb-5">
+                <div class="col-12 col-sm-4 col-md-3 col-lg-7 ">
+                    <img src="/IMAGENES/FEATURES/MATIAS/spotify-publicidad.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <nav aria-label="...">
+        <ul class="pagination justify-content-center mt-5">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active">
+                <a class="page-link" href="#" aria-current="page">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+    <footer class=" navbar-dark bg-dark mt-5 ">
+        <div class="footer-container">
+
+            <!-- Columna 1: Logo -->
+            <div class="footer-column footer-logo">
+                <img src="/IMAGENES/LOGOS/Logo_completo_png.png" alt="Logo del sitio">
+            </div>
+
+            <!-- Columna 2: Redes Sociales -->
+            <div class="footer-column">
+                <h4>Redes Sociales</h4>
+                <div class="footer-socials">
+                    <a href="/PAGES/404.html" class="text-danger" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="/PAGES/404.html" class="text-danger" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="/PAGES/404.html" class="text-danger" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="/PAGES/404.html" class="text-danger" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="/PAGES/404.html" class="text-danger" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 3: Información adicional -->
+            <div class="footer-column footer-info">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="/PAGES/404.html" class="text-danger">Política de privacidad</a></li>
+                    <li><a href="/PAGES/404.html" class="text-danger">Términos de uso</a></li>
+                    <li><a href="/PAGES/404.html" class="text-danger">Contacto</a></li>
+                    <li><a href="/PAGES/404.html" class="text-danger">Soporte</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 5BITS. Todos los derechos reservados.
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+
 </body>
+
 </html>
