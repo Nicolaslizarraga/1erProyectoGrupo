@@ -4,7 +4,7 @@
   font-style: normal;
 }
 body {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/ChatGPT\ Image\ 2\ jul\ 2025\,\ 07_10_31.png");
+  background-image: url("/Assets/FONDOS/imagen\ de\ fondo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -209,7 +209,7 @@ body {
 }
 /* Imagen derecha */
 .contenedor-imagen-form {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/leagueoflegends.jpg");
+  background-image: url("/Assets/Paginas/Principal/leagueoflegends.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100%;
@@ -218,7 +218,7 @@ body {
   min-height: 200px;
 }
 .contenedor-imagen-form-registro {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/metro-exodus-gif.gif");
+  background-image: url("/Assets/Paginas/Principal/metro-exodus-gif.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 55% 10%;
@@ -310,39 +310,39 @@ button[type="submit"] {
 
 /* ===== Contenedor categorias ===== */
 .tendencia {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/TENDENCIA.webp");
+  background-image: url("/Assets/Paginas/Principal/TENDENCIA.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .accion {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/accion.avif");
+  background-image: url("/Assets/Paginas/Principal/accion.avif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .simulacion {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/simulacion.webp");
+  background-image: url("/Assets/Paginas/Principal/simulacion.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .estrategia {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/estrategia.jpeg");
+  background-image: url("/Assets/Paginas/Principal/estrategia.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .top-valorados {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/top-valorados.jpg");
+  background-image: url("/Assets/Paginas/Principal/top-valorados.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .RPG {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/RPG.jpg");
+  background-image: url("/Assets/Paginas/Principal/RPG.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -492,40 +492,40 @@ button[type="submit"] {
 }
 
 .hover-age {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/ageofmytholofy.gif");
+  background-image: url("/Assets/Paginas/Principal/ageofmytholofy.gif");
 }
 .hover-god {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/gif-godofwar.gif");
+  background-image: url("/Assets/Paginas/Principal/gif-godofwar.gif");
 }
 .hover-call {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/call-of-duty-black-ops-4-gif.gif");
+  background-image: url("/Assets/Paginas/Principal/call-of-duty-black-ops-4-gif.gif");
 }
 .hover-horizon {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/horizon-zero-gif.gif");
+  background-image: url("/Assets/Paginas/Principal/horizon-zero-gif.gif");
 }
 .hover-infinite {
   background-image: url("/IMAGENES/FEATURES/MATIAS/bioshok-infinite-gif.gif");
 }
 .hover-witcher3 {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/thewitcher3-gif.gif");
+  background-image: url("/Assets/Paginas/Principal/thewitcher3-gif.gif");
 }
 .hover-fortnite {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/fortnite-gif.gif");
+  background-image: url("/Assets/Paginas/Principal/fortnite-gif.gif");
 }
 .hover-gta5 {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/gta5-gif.gif");
+  background-image: url("/Assets/Paginas/Principal/gta5-gif.gif");
 }
 .hover-hell {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/hell-let-lose-gif.gif");
+  background-image: url("/Assets/Paginas/Principal/hell-let-lose-gif.gif");
 }
 .hover-csgo {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/csgo-gif.gif");
+  background-image: url("/Assets/Paginas/Principal/csgo-gif.gif");
 }
 .hover-bioshoc {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/bioshoc-gif.gif");
+  background-image: url("/Assets/Paginas/Principal/bioshoc-gif.gif");
 }
 .hover-bioshoc2 {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/bioshock2.gif");
+  background-image: url("/Assets/Paginas/Principal/bioshock2.gif");
 }
 
 .image-container:hover .hover-video {
