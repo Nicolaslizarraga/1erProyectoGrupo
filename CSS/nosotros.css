@@ -4,7 +4,7 @@
   font-style: normal;
 }
 body {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/ChatGPT_Image_2_jul_2025_07_10_31.png");
+  background-image: url("/Assets/FONDOS/imagen\ de\ fondo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -159,11 +159,10 @@ body {
 .color-nombre {
   color: red;
 }
-header{
+header {
   padding-bottom: 40px;
 }
 /* ===== MODAL ===== */
-
 
 #mi-modal {
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
@@ -173,7 +172,6 @@ header{
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-
 }
 #mi-modal-registro {
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
@@ -183,11 +181,10 @@ header{
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
- 
 }
 /* Imagen derecha */
 .contenedor-imagen-form {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/leagueoflegends.jpg");
+  background-image: url("/Assets/Paginas/Contacto/leagueoflegends.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100%;
@@ -196,7 +193,7 @@ header{
   min-height: 200px;
 }
 .contenedor-imagen-form-registro {
-  background-image: url("/IMAGENES/FEATURES/MATIAS/metro-exodus-gif.gif");
+  background-image: url("/Assets/Paginas/Contacto/metro-exodus-gif.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 55% 10%;
@@ -285,7 +282,6 @@ button[type="submit"] {
   }
 }
 
-
 /* ===== FIN  MODAL ===== */
 .imagen-logo {
   width: 200px;
@@ -297,34 +293,38 @@ button[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/IMAGENES/FEATURES/MATIAS/street-fighter-gif.gif");
+  background-image: url("/Assets/Paginas/Nosotros/street-figther.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
-.contenedor-imagen-matias{
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
+.contenedor-imagen-matias {
+  width: 180px; /* Tamaño fijo para que sea perfectamente redondo */
+  height: 180px;
+  object-fit: cover; /* Para que la imagen no se deforme */
+  border-radius: 50%; /* ¡La magia ocurre aquí! */
+  border: 3px solid #ff0000; /* Borde opcional */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
-.contenedor-matias-idea2{
+.contenedor-matias-idea2 {
   background-color: #212429;
 }
-.imagen-matias-idea-2{
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
+.imagen-matias-idea-2 {
+  width: 180px; /* Tamaño fijo para que sea perfectamente redondo */
+  height: 180px;
+  object-fit: cover; /* Para que la imagen no se deforme */
+  border-radius: 50%; /* ¡La magia ocurre aquí! */
+  border: 3px solid #ff0000; /* Borde opcional */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 .informacion {
   font-size: 1.2rem;
   font-family: "Libre Baskerville", serif;
 }
-
-
-
+.contenedor-logo {
+  padding-top: 30px;
+}
 
 /* ===== Footer ===== */
 
