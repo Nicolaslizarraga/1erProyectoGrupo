@@ -201,7 +201,9 @@ body {
   border-bottom-right-radius: 15px;
   min-height: 200px;
 }
-
+.contenedor-modal-imagenes{
+ background-color: transparent;
+}
 /* Ajustes para textos */
 .form-text {
   font-size: 0.75rem;

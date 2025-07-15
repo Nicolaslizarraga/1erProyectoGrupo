@@ -168,7 +168,8 @@
                                 <div class="col-12 text-center">
                                     <small class="form-text text-white"> <button type="submit"
                                             formaction="/PAGES/404.html"
-                                            class="btn btn-outline-info btn-sm mt-2 p-2">¿Olvidaste tu contraseña?</button></small>
+                                            class="btn btn-outline-info btn-sm mt-2 p-2">¿Olvidaste tu
+                                            contraseña?</button></small>
                                 </div>
                             </div>
                         </div>
@@ -303,81 +304,132 @@
     </div>
 
     <main>
-        <section class="container-fluid mb-5 contenedor-hero">
+        <section class=" container-fluid mb-5 contenedor-hero">
             <h1 class="display-6 text-white">God of War Ragnarok</h1>
             <div class="row">
                 <div class="col-12 col-md-8 mb-3">
-                    <video class="video" controls autoplay muted loop>
+                    <video class="video w-100" controls autoplay muted loop>
                         <source
-                            src="https://video.akamai.steamstatic.com/store_trailers/257054534/movie480_vp9.webm?t=1726759092">
-                        type="video/webm">
+                            src="https://video.akamai.steamstatic.com/store_trailers/257054534/movie480_vp9.webm?t=1726759092"
+                            type="video/webm">
                     </video>
                 </div>
-                <div class="col-12 col-md-4  contenedor-padre">
-                    <img class="img-fluid w-100 mb-3"
-                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_0ac7ad0a72243bc405131af24328faeeeffb1b73.600x338.jpg?t=1750909504">
-                    <img class="img-fluid w-100 mb-3"
-                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_1848b58003fcc199092227f871770a216d9430f9.1920x1080.jpg?t=1750909504">
-                    <img class="img-fluid w-100 mb-3"
-                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_ada650347f78592237dd3ca48ac7834ac9e22747.1920x1080.jpg?t=1750909504"">
- 
+                <div class="col-12 col-md-4 contenedor-padre">
+                
+                    <img class="img-fluid w-100 mb-3 gallery-img"
+                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_0ac7ad0a72243bc405131af24328faeeeffb1b73.600x338.jpg"
+                        data-bs-toggle="modal" data-bs-target="#modalImage1">
+
+                    <img class="img-fluid w-100 mb-3 gallery-img"
+                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_1848b58003fcc199092227f871770a216d9430f9.1920x1080.jpg"
+                        data-bs-toggle="modal" data-bs-target="#modalImage2">
+
+                    <img class="img-fluid w-100 mb-3 gallery-img"
+                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_ada650347f78592237dd3ca48ac7834ac9e22747.1920x1080.jpg"
+                        data-bs-toggle="modal" data-bs-target="#modalImage3">
+                </div>
+            </div>
+
+            
+            <div class="modal" id="modalImage1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content contenedor-modal-imagenes">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_0ac7ad0a72243bc405131af24328faeeeffb1b73.600x338.jpg"
+                                class="img-fluid" alt="Imagen ampliada 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="modalImage2" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content contenedor-modal-imagenes">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_1848b58003fcc199092227f871770a216d9430f9.1920x1080.jpg"
+                                class="img-fluid" alt="Imagen ampliada 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="modalImage3" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content ">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/ss_ada650347f78592237dd3ca48ac7834ac9e22747.1920x1080.jpg"
+                                class="img-fluid" alt="Imagen ampliada 3">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class=" container-fluid mb-5">
+            <div class="row">
+                <div class="col 12 col-md-7">
+                    <p class="text-white">LA SAGA NÓRDICA CONTINÚA</p>
+                    <p class="text-white"> Desarrollado por Santa Monica Studio y adaptado para PC en
+                        colaboración con
+                        Jetpack Interactive,
+                        llega God of War Ragnarök, un épico y emotivo viaje en el que Kratos y Atreus deberán
+                        decidir a
+                        qué se aferran y qué dejan ir. </p>
+
+                    <p class="text-white"> En God of War Ragnarök, la secuela del aclamado God of War (2018), el
+                        Fimbulvetr está en marcha.
+                        Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas
+                        mientras las
+                        fuerzas asgardianas de Odín se preparan para la batalla profetizada que supondrá el fin
+                        del
+                        mundo.</p>
+
+                    <p class="text-white">Por el camino, explorarán paisajes míticos increíbles y se enfrentarán
+                        a
+                        temibles enemigos, como
+                        monstruos y dioses nórdicos. A medida que se avecina la amenaza del Ragnarök, Kratos y
+                        Atreus
+                        tendrán que elegir entre la seguridad de su familia y la de los reinos. </p>
+                    </p>
+                </div>
+                <div class="col-12 col-md-5 pb-3 text-white">
                     <div class="row">
-                        <div class="col 12 col-md-7">
-                            <p class="text-white">LA SAGA NÓRDICA CONTINÚA</p>
-                            <p class="text-white"> Desarrollado por Santa Monica Studio y adaptado para PC en
-                                colaboración con
-                                Jetpack Interactive,
-                                llega God of War Ragnarök, un épico y emotivo viaje en el que Kratos y Atreus deberán
-                                decidir a
-                                qué se aferran y qué dejan ir. </p>
-
-                            <p class="text-white"> En God of War Ragnarök, la secuela del aclamado God of War (2018), el
-                                Fimbulvetr está en marcha.
-                                Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas
-                                mientras las
-                                fuerzas asgardianas de Odín se preparan para la batalla profetizada que supondrá el fin
-                                del
-                                mundo.</p>
-
-                            <p class="text-white">Por el camino, explorarán paisajes míticos increíbles y se enfrentarán
-                                a
-                                temibles enemigos, como
-                                monstruos y dioses nórdicos. A medida que se avecina la amenaza del Ragnarök, Kratos y
-                                Atreus
-                                tendrán que elegir entre la seguridad de su familia y la de los reinos. </p>
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-5 pb-3 text-white">
-                            <div class="row">
-                                <div class="col-6 col-md-7 col-lg-4">RESEÑAS RECIENTES:</div>
-                                <div class="col-6 col-md-5 col-lg-8">Muy Positivas</div>
-                                <div class="col 5 col-md-7 col-lg-4">RESEÑAS GENERALES:</div>
-                                <div class="col-6 col-md-5 col-lg-8">Muy Positivas</div>
-                                <div class="col-6 col-md-12 col-lg-4">FECHA DE LANZAMIENTO:</div>
-                                <div class="col-6 col-md-12 col-lg-8">19 SEP 2024</div>
-                                <div class="col-4 col-md-12 col-lg-4">DESARROLLADOR:</div>
-                                <div class="col-8 col-md-12 col-lg-8">Santa Monica Studio, Jetpack Interactive </div>
-                                <div class="col-4 col-md-12 col-lg-4">EDITOR:</div>
-                                <div class="col-8 col-md-12 col-lg-8">PlayStation Publishing LLC</div>
-                                <div class="col-12 col-md-12 col-lg-12">Etiquetas populares para este producto:</div>
-                                <div class="col-3 col-md-6 col-lg-4">Acción</div>
-                                <div class="col-3 col-md-6 col-lg-4">Aventura<a href="#"></a></div>
-                                <div class="col-6 col-md-6 col lg-3">Accion y Aventura</div>
-                                <div class="col-4 col-md-6 col-lg-2">Rol</div>
-                                <div class="col-4 col-md-6 col-lg-2">3D</div>
-                                <div class="col-4 col-md-6 col-lg-2">+</div>
-                                <div class="col-4 col-md-6 col-lg-4">PRECIO:</div>
-                                <div class="col-4 col-md-6 col-lg-4">40USD</div>
-                            </div>
-                        </div>
+                        <div class="col-6 col-md-7 col-lg-4">RESEÑAS RECIENTES:</div>
+                        <div class="col-6 col-md-5 col-lg-8">Muy Positivas</div>
+                        <div class="col 5 col-md-7 col-lg-4">RESEÑAS GENERALES:</div>
+                        <div class="col-6 col-md-5 col-lg-8">Muy Positivas</div>
+                        <div class="col-6 col-md-12 col-lg-4">FECHA DE LANZAMIENTO:</div>
+                        <div class="col-6 col-md-12 col-lg-8">19 SEP 2024</div>
+                        <div class="col-4 col-md-12 col-lg-4">DESARROLLADOR:</div>
+                        <div class="col-8 col-md-12 col-lg-8">Santa Monica Studio, Jetpack Interactive </div>
+                        <div class="col-4 col-md-12 col-lg-4">EDITOR:</div>
+                        <div class="col-8 col-md-12 col-lg-8">PlayStation Publishing LLC</div>
+                        <div class="col-12 col-md-12 col-lg-12">Etiquetas populares para este producto:</div>
+                        <div class="col-3 col-md-6 col-lg-4">Acción</div>
+                        <div class="col-3 col-md-6 col-lg-4">Aventura<a href="#"></a></div>
+                        <div class="col-6 col-md-6 col lg-3">Accion y Aventura</div>
+                        <div class="col-4 col-md-6 col-lg-2">Rol</div>
+                        <div class="col-4 col-md-6 col-lg-2">3D</div>
+                        <div class="col-4 col-md-6 col-lg-2">+</div>
+                        <div class="col-4 col-md-6 col-lg-4">PRECIO:</div>
+                        <div class="col-4 col-md-6 col-lg-4">40USD</div>
                     </div>
-                    <div class="col-4 col-md-6 col-lg-4"><a href="/PAGES/carrito.html"><button
-                                class="boton-agregar-carrito text-white">Agregar al carrito</button></a>
-                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-6 col-lg-4"><a href="/PAGES/carrito.html"><button
+                        class="boton-agregar-carrito text-white">Agregar al carrito</button></a>
+            </div>
         </section>
         <section class="container-fluid opiniones-jugadores mt-5 pt-5">
             <div class="row">
