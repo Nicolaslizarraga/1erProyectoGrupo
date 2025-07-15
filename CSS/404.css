@@ -222,7 +222,7 @@ body {
 }
 /* Imagen derecha */
 .contenedor-imagen-form {
-  background-image: url("/IMAGENES/FONDOS/leagueoflegends.jpg");
+  background-image: url("/Assets//Paginas/Carrito/leagueoflegends.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100%;
@@ -231,7 +231,7 @@ body {
   min-height: 200px;
 }
 .contenedor-imagen-form-registro {
-  background-image: url("/IMAGENES/FONDOS/metro-exodus-gif.gif");
+  background-image: url("/Assets/Paginas/Carrito/metro-exodus-gif.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 55% 10%;
