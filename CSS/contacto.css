@@ -310,20 +310,6 @@ footer {
   box-sizing: border-box;
 }
 
-/* Para dispositivos medianos (tablets) */
-@media (min-width: 600px) {
-  .footer-column {
-    flex: 1 1 50%;
-  }
-}
-
-/* Para dispositivos grandes */
-@media (min-width: 900px) {
-  .footer-column {
-    flex: 1 1 33.33%;
-  }
-}
-
 .footer-logo img {
   max-width: 160px;
 }

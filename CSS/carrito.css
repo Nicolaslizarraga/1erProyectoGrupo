@@ -1,7 +1,7 @@
-*{
+* {
   font-family: "Bebas Neue", sans-serif;
 }
-*{
+* {
   font-family: "Bebas Neue", sans-serif;
 }
 body {
@@ -279,8 +279,12 @@ button[type="submit"] {
 
 /* ===== FIN  MODAL ===== */
 
-/* otro contenido */
 
+.enlace-compra {
+  text-decoration: none;
+  color: inherit;
+}
+/* otro contenido CARRITO*/
 .cart-container {
   max-width: 460px;
   width: 90vw;
@@ -312,6 +316,7 @@ h3 {
 }
 
 .item img {
+  display: flex;
   width: 70px;
   height: 95px;
   border-radius: 6px;
@@ -327,6 +332,7 @@ h3 {
 }
 
 .item-info h4 {
+  text-align: center;
   margin: 0;
   font-size: 15px;
   color: #ff00c8;
@@ -334,6 +340,7 @@ h3 {
 }
 
 .item-info p {
+  text-align: center;
   margin: 4px 0 8px;
   font-size: 13px;
   color: #f0c3ff;
@@ -459,7 +466,6 @@ h3 {
   color: inherit;
 }
 
-
 /*===== Footer ===== */
 
 footer {
@@ -559,4 +565,3 @@ footer {
     padding: 0;
   }
 }
-

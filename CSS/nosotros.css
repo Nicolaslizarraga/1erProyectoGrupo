@@ -347,20 +347,6 @@ footer {
   box-sizing: border-box;
 }
 
-/* Para dispositivos medianos (tablets) */
-@media (min-width: 600px) {
-  .footer-column {
-    flex: 1 1 50%;
-  }
-}
-
-/* Para dispositivos grandes */
-@media (min-width: 900px) {
-  .footer-column {
-    flex: 1 1 33.33%;
-  }
-}
-
 .footer-logo img {
   max-width: 160px;
 }
@@ -414,14 +400,4 @@ footer {
   color: #8f98a0;
   border-top: 1px solid #2a475e;
   padding-top: 20px;
-}
-
-@media (max-width: 425px) {
-  .publicidad-coca {
-    display: none;
-    width: 0;
-    height: 0;
-    margin: 0;
-    padding: 0;
-  }
 }
