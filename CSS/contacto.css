@@ -271,18 +271,8 @@ button[type="submit"] {
   }
 }
 .boton-enviar {
-  background-color: rgb(55, 52, 61);
+  width: 100px !important;
   color: #f2f3f3;
-  padding: 10px 25px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.boton-enviar:hover {
-  border-radius: 10px;
-  background-color: #9e1515;
-  color: white;
 }
 /* ===== FIN  MODAL ===== */
 
@@ -294,12 +284,6 @@ button[type="submit"] {
 }
 .mapa-container h2 {
   text-align: center;
-}
-.fondo1 {
-  background-image: url("/IMAGENES/FEATURES/JUAN/imagenBOSQUE.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 h4 {
   color: white;
