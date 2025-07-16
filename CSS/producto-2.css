@@ -1,0 +1,464 @@
+* {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-image: url("/Assets/FONDOS/imagen\ de\ fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px 0;
+  /* background-color: rgba(13, 13, 13, 0.95) !important;*/
+  background-color: #c42021;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-text {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #ff6b00, #ffa502);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 8px 15px !important;
+  border-radius: 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .dropdown-menu {
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+  display: block;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+.navbar .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.search-form {
+  position: relative;
+  width: 250px;
+}
+
+.search-form input {
+  padding-right: 40px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+}
+
+.search-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-form input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: none;
+}
+
+.btn-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 15px;
+}
+
+.btn-search:hover {
+  color: white;
+}
+
+.btn-account {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-account:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.btn-cart {
+  position: relative;
+  color: white;
+  font-size: 1.2rem;
+  padding: 8px 15px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  background: var(--warning);
+  color: var(--dark);
+  font-size: 0.7rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.dropdown-item {
+  padding: 8px 15px;
+  font-weight: 500;
+}
+
+.dropdown-item i {
+  width: 20px;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.color-nombre {
+  color: red;
+}
+
+/* ===== MODAL ===== */
+
+#mi-modal {
+  background-color: rgba(0, 0, 0, 0.7); 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+#mi-modal-registro {
+  background-color: rgba(0, 0, 0, 0.7); 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.contenedor-imagen-form {
+  background-image: url("/Assets/Paginas/Productos/leagueoflegends.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  min-height: 200px;
+}
+.contenedor-imagen-form-registro {
+  background-image: url("/Assets/Paginas/Productos/metro-exodus-gif.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 55% 10%;
+  min-height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  min-height: 200px;
+}
+
+.form-text {
+  font-size: 0.75rem;
+}
+.iconos-login {
+  font-size: 1.5rem;
+  color: white;
+}
+.modal-header {
+  border-bottom: none !important;
+}
+.modal-title {
+  font-size: 4rem;
+}
+.modal-content {
+  background-color: transparent !important;
+}
+/* Tamaño botón */
+button[type="submit"] {
+  width: 100%;
+}
+.enlace-olvidar-contraseña {
+  color: white;
+  text-decoration: none;
+}
+.btn-login {
+  padding: 12px 30px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.btn-login:hover {
+  background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.4s;
+}
+
+.btn-login:hover::before {
+  left: 100%;
+}
+.btn-close {
+  filter: invert(1) brightness(100%); 
+  opacity: 1; 
+}
+
+.btn-close:hover {
+  opacity: 0.8; 
+}
+@media (max-width: 768px) {
+  .contenedor-iconos-login {
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .contenedor-iconos-login {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* ===== FIN  MODAL ===== */
+.contenedor-hero{
+  padding-top: 50px;
+  margin-top: 50px;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+
+.col-12.col-md-6 {
+  padding: 0; 
+}
+
+
+.contenedor-padre > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.boton-agregar-carrito {
+ 
+  font-family: "Anton", sans-serif; 
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  /* Colores inspirados en God of War (rojo sangre, dorado, negro) */
+  background: linear-gradient(135deg, #0a0db8 0%, #351b4d 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto hover (brillo y escala) */
+.boton-agregar-carrito:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Efecto activo (como un golpe) */
+.boton-agregar-carrito:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Detalle de runa nórdica (opcional) */
+.boton-agregar-carrito::after {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(245, 244, 237, 0.3);
+  font-size: 1rem;
+}
+
+.opiniones-jugadores {
+  font-family: "Arial", sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #08041d;
+  border-radius: 8px;
+}
+
+.titulo-opiniones {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.opinion-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.opinion-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.opinion-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.texto-opinion {
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ===== Footer ===== */
+
+footer {
+  /*background-color: #210c24;*/
+  background-color: #c42021;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer-logo img {
+  max-width: 160px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.footer-socials a {
+  font-size: 1.6rem;
+  color: #c6d4df;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #66c0f4;
+  transform: scale(1.8);
+}
+
+.footer-info h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.footer-info ul li {
+  margin-bottom: 8px;
+}
+
+.footer-info a {
+  color: #c6d4df;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #8f98a0;
+  border-top: 1px solid #2a475e;
+  padding-top: 20px;
+}
+

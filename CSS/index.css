@@ -1,0 +1,715 @@
+* {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-image: url("/Assets/FONDOS/imagen\ de\ fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px 0;
+  /* background-color: rgba(13, 13, 13, 0.95) !important;*/
+  background-color: #c42021;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-text {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #ff6b00, #ffa502);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 8px 15px !important;
+  border-radius: 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .dropdown-menu {
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+  display: block;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+.navbar .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.search-form {
+  position: relative;
+  width: 250px;
+}
+
+.search-form input {
+  padding-right: 40px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+}
+
+.search-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-form input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: none;
+}
+
+.btn-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 15px;
+}
+
+.btn-search:hover {
+  color: white;
+}
+
+.btn-account {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-account:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.btn-cart {
+  position: relative;
+  color: white;
+  font-size: 1.2rem;
+  padding: 8px 15px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  background: var(--warning);
+  color: var(--dark);
+  font-size: 0.7rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.dropdown-item {
+  padding: 8px 15px;
+  font-weight: 500;
+}
+
+.dropdown-item i {
+  width: 20px;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.color-nombre {
+  color: red;
+}
+/* ===== paginacion ===== */
+
+.pagination .page-link {
+  color: #fff;
+  background-color: #6c5ce7;
+  border: none;
+  margin: 0 5px;
+  border-radius: 8px !important;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: all 0.3s;
+}
+
+.pagination .page-link:hover {
+  background-color: #a29bfe;
+  transform: scale(1.05);
+}
+
+.pagination .active .page-link {
+  background-color: #ff7675 !important;
+  box-shadow: 0 4px 8px rgba(255, 118, 117, 0.3);
+}
+
+.pagination .disabled .page-link {
+  background-color: #b2bec3 !important;
+}
+
+/* ===== MODAL ===== */
+
+#mi-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+#mi-modal-registro {
+  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+/* Imagen derecha */
+.contenedor-imagen-form {
+  background-image: url("/Assets/Paginas/Principal/leagueoflegends.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  min-height: 200px;
+}
+.contenedor-imagen-form-registro {
+  background-image: url("/Assets/Paginas/Principal/metro-exodus-gif.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 55% 10%;
+  min-height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  min-height: 200px;
+}
+/* Ajustes para textos */
+.form-text {
+  font-size: 0.75rem;
+}
+.iconos-login {
+  font-size: 1.5rem;
+  color: white;
+}
+.modal-header {
+  border-bottom: none !important;
+}
+.modal-title {
+  font-size: 4rem;
+}
+.modal-content {
+  background-color: transparent !important;
+}
+/* Tamaño botón */
+button[type="submit"] {
+  width: 100%;
+}
+.enlace-olvidar-contraseña {
+  color: white;
+  text-decoration: none;
+}
+.btn-login {
+  padding: 12px 30px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.btn-login:hover {
+  background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.4s;
+}
+
+.btn-login:hover::before {
+  left: 100%;
+}
+.btn-close {
+  filter: invert(1) brightness(100%);
+  opacity: 1;
+}
+
+.btn-close:hover {
+  opacity: 0.8; /* Efecto hover suave */
+}
+@media (max-width: 768px) {
+  .contenedor-iconos-login {
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .contenedor-iconos-login {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* ===== FIN  MODAL ===== */
+
+/* ===== Contenedor categorias ===== */
+.tendencia {
+  background-image: url("/Assets/Paginas/Principal/TENDENCIA.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.accion {
+  background-image: url("/Assets/Paginas/Principal/accion.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.simulacion {
+  background-image: url("/Assets/Paginas/Principal/simulacion.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.estrategia {
+  background-image: url("/Assets/Paginas/Principal/estrategia.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top-valorados {
+  background-image: url("/Assets/Paginas/Principal/top-valorados.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.RPG {
+  background-image: url("/Assets/Paginas/Principal/RPG.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.category-card {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.shadow-hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.rounded-lg {
+  border-radius: 12px !important;
+}
+
+.icon-container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-indicator {
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6b6b, #feca57);
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.category-card:hover .hover-indicator {
+  opacity: 1;
+}
+
+.text-gradient-primary {
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-danger {
+  background: linear-gradient(45deg, #065f06, #ffb199);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-info {
+  background: linear-gradient(45deg, #3b3a36, #68e0cf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-warning {
+  background: linear-gradient(45deg, #161511, #b6553b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-pink {
+  background: linear-gradient(45deg, #910a0e, #fad0c4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 
+
+
+CARDS  
+
+
+*/
+
+/* ----- CONTENEDOR PRINCIPAL ----- */
+
+.game-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+/* ----- IMAGEN PRINCIPAL ----- */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.image-container2 {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+.image-container:hover .main-image {
+  opacity: 0;
+}
+.image-container2:hover .main-image {
+  opacity: 0;
+}
+
+/* ----- VIDEO / GIF EN HOVER ----- */
+
+.hover-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.hover-age {
+  background-image: url("/Assets/Paginas/Principal/ageofmytholofy.gif");
+}
+.hover-god {
+  background-image: url("/Assets/Paginas/Principal/gif-godofwar.gif");
+}
+.hover-call {
+  background-image: url("/Assets/Paginas/Principal/call-of-duty-black-ops-4-gif.gif");
+}
+.hover-horizon {
+  background-image: url("/Assets/Paginas/Principal/horizon-zero-gif.gif");
+}
+.hover-infinite {
+  background-image: url("/IMAGENES/FEATURES/MATIAS/bioshok-infinite-gif.gif");
+}
+.hover-witcher3 {
+  background-image: url("/Assets/Paginas/Principal/thewitcher3-gif.gif");
+}
+.hover-fortnite {
+  background-image: url("/Assets/Paginas/Principal/fortnite-gif.gif");
+}
+.hover-gta5 {
+  background-image: url("/Assets/Paginas/Principal/gta5-gif.gif");
+}
+.hover-hell {
+  background-image: url("/Assets/Paginas/Principal/hell-let-lose-gif.gif");
+}
+.hover-csgo {
+  background-image: url("/Assets/Paginas/Principal/csgo-gif.gif");
+}
+.hover-bioshoc {
+  background-image: url("/Assets/Paginas/Principal/bioshoc-gif.gif");
+}
+.hover-bioshoc2 {
+  background-image: url("/Assets/Paginas/Principal/bioshock2.gif");
+}
+
+.image-container:hover .hover-video {
+  opacity: 1;
+}
+.image-container2:hover .hover-video {
+  opacity: 1;
+}
+
+/* ----- INFORMACIÓN DEL JUEGO ----- */
+
+.game-info {
+  padding: 10px;
+  background-color: #1b1b1b;
+  color: white;
+  font-size: 14px;
+  display: none;
+  text-decoration: none;
+}
+.game-card:hover .game-info {
+  display: block;
+}
+
+/* ----- TAGS ----- */
+
+.tags span {
+  display: inline-block;
+  background-color: #444;
+  color: #ddd;
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin: 2px 4px 0 0;
+  font-size: 12px;
+}
+
+/* ----- PRECIOS Y BOTÓN ----- */
+.price-section {
+  margin-top: 10px;
+}
+.btn-cart {
+  background-color: #9dc400;
+  border: none;
+  padding: 6px 10px;
+  margin-right: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.discount {
+  color: #baff00;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.old-price {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 5px;
+}
+.new-price {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Carousel */
+
+.contenedor-carousel {
+  width: 100%;
+  height: 500px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 30% 20%;
+}
+
+/* carousel */
+
+#carousel-promos .carousel-item {
+  width: 100%;
+  height: 25vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+#carousel-promos {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#carousel-promos .carousel-item {
+  transition: transform 0.5s ease;
+}
+@media (max-width: 768px) {
+  #carousel-promos .carousel-item {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 576px) {
+  #carousel-promos .carousel-item {
+    height: 45vh;
+  }
+}
+@media (max-width: 425px) {
+  .publicidad-coca {
+    display: none !important;
+  }
+}
+
+/* ===== Footer ===== */
+
+footer {
+  /*background-color: #210c24;*/
+  background-color: #c42021;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer-logo img {
+  max-width: 160px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.footer-socials a {
+  font-size: 1.6rem;
+  color: #c6d4df;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #66c0f4;
+  transform: scale(1.8);
+}
+
+.footer-info h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.footer-info ul li {
+  margin-bottom: 8px;
+}
+
+.footer-info a {
+  color: #c6d4df;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #8f98a0;
+  border-top: 1px solid #2a475e;
+  padding-top: 20px;
+}
