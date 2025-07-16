@@ -155,24 +155,24 @@ body {
 /* ===== MODAL ===== */
 
 #mi-modal {
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
-  background: rgba(255, 255, 255, 0.1); /* Transparente blanco */
-  backdrop-filter: blur(10px); /* Efecto vidrio */
+  background-color: rgba(0, 0, 0, 0.7); 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
 }
 #mi-modal-registro {
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
-  background: rgba(255, 255, 255, 0.1); /* Transparente blanco */
-  backdrop-filter: blur(10px); /* Efecto vidrio */
+  background-color: rgba(0, 0, 0, 0.7); 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
 }
-/* Imagen derecha */
+
 .contenedor-imagen-form {
   background-image: url("/Assets/Paginas/Contacto/leagueoflegends.jpg");
   background-size: cover;
@@ -250,12 +250,12 @@ button[type="submit"] {
   left: 100%;
 }
 .btn-close {
-  filter: invert(1) brightness(100%); /* Convierte el ícono a blanco */
-  opacity: 1; /* Asegura que no esté semitransparente */
+  filter: invert(1) brightness(100%);
+  opacity: 1; 
 }
 
 .btn-close:hover {
-  opacity: 0.8; /* Efecto hover suave */
+  opacity: 0.8; 
 }
 @media (max-width: 768px) {
   .contenedor-iconos-login {

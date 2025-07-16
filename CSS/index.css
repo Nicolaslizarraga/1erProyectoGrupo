@@ -161,10 +161,10 @@ body {
   color: red;
 }
 /* ===== paginacion ===== */
-/* Estilos personalizados para la paginación */
+
 .pagination .page-link {
-  color: #fff; /* Texto blanco */
-  background-color: #6c5ce7; /* Fondo morado */
+  color: #fff; 
+  background-color: #6c5ce7; 
   border: none;
   margin: 0 5px;
   border-radius: 8px !important;
@@ -174,34 +174,34 @@ body {
 }
 
 .pagination .page-link:hover {
-  background-color: #a29bfe; /* Color hover más claro */
+  background-color: #a29bfe; 
   transform: scale(1.05);
 }
 
 .pagination .active .page-link {
-  background-color: #ff7675 !important; /* Color activo (rojo/rosado) */
+  background-color: #ff7675 !important; 
   box-shadow: 0 4px 8px rgba(255, 118, 117, 0.3);
 }
 
 .pagination .disabled .page-link {
-  background-color: #b2bec3 !important; /* Color deshabilitado (gris) */
+  background-color: #b2bec3 !important; 
 }
 
 /* ===== MODAL ===== */
 
 #mi-modal {
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
-  background: rgba(255, 255, 255, 0.1); /* Transparente blanco */
-  backdrop-filter: blur(10px); /* Efecto vidrio */
+  background-color: rgba(0, 0, 0, 0.7); 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
 }
 #mi-modal-registro {
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
-  background: rgba(255, 255, 255, 0.1); /* Transparente blanco */
-  backdrop-filter: blur(10px); /* Efecto vidrio */
+  background-color: rgba(0, 0, 0, 0.7); 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -433,7 +433,13 @@ button[type="submit"] {
   -webkit-text-fill-color: transparent;
 }
 
-/* CARDS  */
+/* 
+
+
+CARDS  
+
+
+*/
 
 /* ----- CONTENEDOR PRINCIPAL ----- */
 
@@ -536,6 +542,7 @@ button[type="submit"] {
 }
 
 /* ----- INFORMACIÓN DEL JUEGO ----- */
+
 .game-info {
   padding: 10px;
   background-color: #1b1b1b;
@@ -549,6 +556,7 @@ button[type="submit"] {
 }
 
 /* ----- TAGS ----- */
+
 .tags span {
   display: inline-block;
   background-color: #444;
@@ -597,7 +605,7 @@ button[type="submit"] {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: 30% 20%; /* Más control aún, en porcentaje */
+  object-position: 30% 20%; 
 }
 
 /* carousel */
@@ -611,11 +619,11 @@ button[type="submit"] {
   border-radius: 8px;
 }
 #carousel-promos {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra para mejor contraste */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
 }
 
 #carousel-promos .carousel-item {
-  transition: transform 0.5s ease; /* Transición suave */
+  transition: transform 0.5s ease; 
 }
 @media (max-width: 768px) {
   #carousel-promos .carousel-item {

@@ -161,24 +161,24 @@ body {
 /* ===== MODAL ===== */
 
 #mi-modal {
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
-  background: rgba(255, 255, 255, 0.1); /* Transparente blanco */
-  backdrop-filter: blur(10px); /* Efecto vidrio */
+  background-color: rgba(0, 0, 0, 0.7); 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
 }
 #mi-modal-registro {
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
-  background: rgba(255, 255, 255, 0.1); /* Transparente blanco */
-  backdrop-filter: blur(10px); /* Efecto vidrio */
+  background-color: rgba(0, 0, 0, 0.7); 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
 }
-/* Imagen derecha */
+
 .contenedor-imagen-form {
   background-image: url("/Assets/Paginas/Carrito/leagueoflegends.jpg");
   background-size: cover;
@@ -198,7 +198,6 @@ body {
   border-bottom-right-radius: 15px;
   min-height: 200px;
 }
-/* Ajustes para textos */
 .form-text {
   font-size: 0.75rem;
 }
@@ -256,12 +255,12 @@ button[type="submit"] {
   left: 100%;
 }
 .btn-close {
-  filter: invert(1) brightness(100%); /* Convierte el ícono a blanco */
-  opacity: 1; /* Asegura que no esté semitransparente */
+  filter: invert(1) brightness(100%); 
+  opacity: 1; 
 }
 
 .btn-close:hover {
-  opacity: 0.8; /* Efecto hover suave */
+  opacity: 0.8; 
 }
 @media (max-width: 768px) {
   .contenedor-iconos-login {
@@ -487,14 +486,14 @@ footer {
   box-sizing: border-box;
 }
 
-/* Para dispositivos medianos (tablets) */
+
 @media (min-width: 600px) {
   .footer-column {
     flex: 1 1 50%;
   }
 }
 
-/* Para dispositivos grandes */
+
 @media (min-width: 900px) {
   .footer-column {
     flex: 1 1 33.33%;

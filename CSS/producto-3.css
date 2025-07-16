@@ -164,24 +164,24 @@ body {
 /* ===== MODAL ===== */
 
 #mi-modal {
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
-  background: rgba(255, 255, 255, 0.1); /* Transparente blanco */
-  backdrop-filter: blur(10px); /* Efecto vidrio */
+  background-color: rgba(0, 0, 0, 0.7); 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
 }
 #mi-modal-registro {
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi */
-  background: rgba(255, 255, 255, 0.1); /* Transparente blanco */
-  backdrop-filter: blur(10px); /* Efecto vidrio */
+  background-color: rgba(0, 0, 0, 0.7); 
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
 }
-/* Imagen derecha */
+
 .contenedor-imagen-form {
   background-image: url("/Assets/Paginas/Productos/leagueoflegends.jpg");
   background-size: cover;
@@ -260,12 +260,12 @@ button[type="submit"] {
   left: 100%;
 }
 .btn-close {
-  filter: invert(1) brightness(100%); /* Convierte el ícono a blanco */
-  opacity: 1; /* Asegura que no esté semitransparente */
+  filter: invert(1) brightness(100%); 
+  opacity: 1; 
 }
 
 .btn-close:hover {
-  opacity: 0.8; /* Efecto hover suave */
+  opacity: 0.8; 
 }
 @media (max-width: 768px) {
   .contenedor-iconos-login {
@@ -294,12 +294,12 @@ button[type="submit"] {
   padding: 0;
 }
 
-/* Aseguramos que el video y la imagen compartan el mismo ancho */
+
 .col-12.col-md-6 {
-  padding: 0; /* Quitamos el padding que Bootstrap agrega por defecto */
+  padding: 0; 
 }
 
-/* Imagen debajo del video: ocupar todo el ancho */
+
 .contenedor-padre > img {
   width: 100%;
   height: auto;
@@ -308,8 +308,8 @@ button[type="submit"] {
   margin-bottom: 10px;
 }
 .boton-agregar-carrito {
-  /* Base */
-  font-family: "Anton", sans-serif; /* Tipografía fuerte como el juego */
+
+  font-family: "Anton", sans-serif; 
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -320,25 +320,22 @@ button[type="submit"] {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-
-  /* Colores inspirados en God of War (rojo sangre, dorado, negro) */
   background: linear-gradient(135deg, #0a0db8 0%, #351b4d 100%);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Efecto hover (brillo y escala) */
+
 .boton-agregar-carrito:hover {
   transform: translateY(-2px) scale(1.02);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Efecto activo (como un golpe) */
+
 .boton-agregar-carrito:active {
   transform: translateY(1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Detalle de runa nórdica (opcional) */
 .boton-agregar-carrito::after {
   position: absolute;
   right: 15px;
