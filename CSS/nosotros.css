@@ -300,23 +300,24 @@ button[type="submit"] {
   background-position: top;
 }
 .contenedor-imagen-matias {
-  width: 180px; /* Tamaño fijo para que sea perfectamente redondo */
-  height: 180px;
-  object-fit: cover; /* Para que la imagen no se deforme */
-  border-radius: 50%; /* ¡La magia ocurre aquí! */
-  border: 3px solid #ff0000; /* Borde opcional */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  width: 200px; 
+  height: 200px;
+  object-fit: cover; 
+  border-radius: 50%; 
+  border: 3px solid #ff0000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+
 .contenedor-matias-idea2 {
   background-color: #212429;
 }
 .imagen-matias-idea-2 {
-  width: 180px; /* Tamaño fijo para que sea perfectamente redondo */
-  height: 180px;
-  object-fit: cover; /* Para que la imagen no se deforme */
-  border-radius: 50%; /* ¡La magia ocurre aquí! */
-  border: 3px solid #ff0000; /* Borde opcional */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  border-radius: 80%; 
+  border: 3px solid #ff0000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 .informacion {
   font-size: 1.2rem;

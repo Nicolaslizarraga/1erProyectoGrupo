@@ -285,8 +285,8 @@ button[type="submit"] {
   left: 100%;
 }
 .btn-close {
-  filter: invert(1) brightness(100%); /* Convierte el ícono a blanco */
-  opacity: 1; /* Asegura que no esté semitransparente */
+  filter: invert(1) brightness(100%); 
+  opacity: 1; 
 }
 
 .btn-close:hover {
