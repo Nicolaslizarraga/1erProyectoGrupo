@@ -163,8 +163,8 @@ body {
 /* ===== paginacion ===== */
 
 .pagination .page-link {
-  color: #fff; 
-  background-color: #6c5ce7; 
+  color: #fff;
+  background-color: #6c5ce7;
   border: none;
   margin: 0 5px;
   border-radius: 8px !important;
@@ -174,24 +174,24 @@ body {
 }
 
 .pagination .page-link:hover {
-  background-color: #a29bfe; 
+  background-color: #a29bfe;
   transform: scale(1.05);
 }
 
 .pagination .active .page-link {
-  background-color: #ff7675 !important; 
+  background-color: #ff7675 !important;
   box-shadow: 0 4px 8px rgba(255, 118, 117, 0.3);
 }
 
 .pagination .disabled .page-link {
-  background-color: #b2bec3 !important; 
+  background-color: #b2bec3 !important;
 }
 
 /* ===== MODAL ===== */
 
 #mi-modal {
-  background-color: rgba(0, 0, 0, 0.7); 
-  background: rgba(255, 255, 255, 0.1); 
+  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
@@ -199,9 +199,9 @@ body {
   color: white;
 }
 #mi-modal-registro {
-  background-color: rgba(0, 0, 0, 0.7); 
-  background: rgba(255, 255, 255, 0.1); 
-  backdrop-filter: blur(10px); 
+  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -285,8 +285,8 @@ button[type="submit"] {
   left: 100%;
 }
 .btn-close {
-  filter: invert(1) brightness(100%); 
-  opacity: 1; 
+  filter: invert(1) brightness(100%);
+  opacity: 1;
 }
 
 .btn-close:hover {
@@ -351,10 +351,6 @@ button[type="submit"] {
 .category-card {
   text-decoration: none;
   transition: transform 0.3s ease;
-}
-
-.category-card:hover {
-  transform: translateY(-5px); /* hay que acordarnos de ajustarlo o sacarlo */
 }
 
 .shadow-hover {
@@ -605,7 +601,7 @@ CARDS
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: 30% 20%; 
+  object-position: 30% 20%;
 }
 
 /* carousel */
@@ -619,11 +615,11 @@ CARDS
   border-radius: 8px;
 }
 #carousel-promos {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 #carousel-promos .carousel-item {
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 @media (max-width: 768px) {
   #carousel-promos .carousel-item {
@@ -634,6 +630,11 @@ CARDS
 @media (max-width: 576px) {
   #carousel-promos .carousel-item {
     height: 45vh;
+  }
+}
+@media (max-width: 425px) {
+  .publicidad-coca {
+    display: none !important;
   }
 }
 
@@ -712,4 +713,3 @@ footer {
   border-top: 1px solid #2a475e;
   padding-top: 20px;
 }
-
